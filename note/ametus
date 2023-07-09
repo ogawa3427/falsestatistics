@@ -1,0 +1,16 @@
+#!/bin/bash
+
+read prm
+
+filename="$prm"
+
+while IFS=' ' read -r line; do
+  fields=($line)
+
+  if [ ${#fields[@]} -ge 10 ]; then
+    echo "${fields[1]}${fields[2]},${fields[9]}"
+#このへんはちょっとわかる
+  fi
+
+done < "$filename"
+exit

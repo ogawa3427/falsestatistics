@@ -1,0 +1,29 @@
+#!/bin/bash
+
+echo "filename?"
+read -r origin
+
+filename="$origin"
+# ここと
+
+while IFS= read -r line; do
+# ここと
+
+if [[ $line == 55102* ]]; then
+#ここと
+#  echo $lineと
+  echo $line >> prm_toyama.txt
+
+elif [[ $line == 57066* ]]; then
+  echo $line >> prm_fukui.txt
+
+else
+  echo $line >> prm_kanazawa.txt
+fi
+
+done < "$filename"
+# ここは書いてもらった
+
+echo "OK!"
+
+exit

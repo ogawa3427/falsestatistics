@@ -1,0 +1,13 @@
+#!/bin/bash
+
+read adv
+filename="$adv"
+
+while IFS= read -r output_eine; do
+
+    output_string="${output_eine:0:4}-${output_eine:4:2}-${output_eine:6:2} ${output_eine:8:2}:${output_eine:10:2}${output_eine:12:5}"
+    echo "$output_string"
+
+done < "$filename"
+
+exit
