@@ -1,0 +1,12 @@
+#!/bin/bash
+
+binary_string=$(cat hatitanji.txt) # ０と１からなる文字列
+
+binary_data=""
+for byte_str in $binary_string; do
+    byte_value=$((2#$byte_str))  # ２進数文字列を数値に変換
+    byte=$(printf "%02x" $byte_value)
+    binary_data+=$byte
+done
+
+echo -n $binary_data | xxd -r -p > output.bmp
