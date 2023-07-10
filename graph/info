@@ -2,7 +2,8 @@
 
 #filesize(bit)
 info=62
-data=$(grep -c '^' "tenp.txt") 
+data=$(grep -c '^' "tenp.txt")
+time=$(grep -c '^' "test.csv")
 
 dec=$(echo "$info + $data" | bc)
 hex=$(echo "idase=10; obase=16; $dec" | bc)
@@ -18,7 +19,7 @@ echo ${hex: -2} ${hex:4:2} ${hex:2:2} ${hex:0:2} > filesize.txt
 
 
 
-dec=$(echo "$data - 1" | bc) 
+dec=$(echo "$time - 1" | bc) 
 hex=$(echo "idase=10; obase=16; $dec" | bc)
 
 #8埋め

@@ -1,9 +1,0 @@
-#!/bin/bash
-
-#read filename
-filename=test.csv
-
-# CSVファイルの各行に対してawkを実行
-awk -F',' '{print $2}' "$filename"
-
-exit
