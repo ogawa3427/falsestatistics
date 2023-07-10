@@ -1,0 +1,40 @@
+#!/bin/bash
+
+#read filename
+filename=test.csv
+
+line=$(cat max)
+min=$(cat min)
+
+tur=1
+
+	while [ "$line" != "$min" ]; do
+    
+#    field=$(echo "$line" | cut -d',' -f2)
+#    echo "$field"
+		
+
+    	while IFS= read -r tanshin; do
+    		#2行目を取得
+    		jihhunn=$(echo "$tanshin" | cut -d',' -f2 | sed 's/\.//g')
+
+			if [ "$line" == "$jihhunn" ]; then
+    			echo -n 1
+    		else
+    			echo -n 0
+    		fi
+
+    		if [ "$tur" == 8 ]; then
+    			echo -n " "
+    			tur=0
+    		fi
+
+    		((++tur))
+
+    	done < "$filename"
+
+    	((--line))
+
+	done < "$filename"
+
+exit

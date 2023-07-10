@@ -1,0 +1,18 @@
+#!/bin/bash
+
+cat dataa.txt | sed 's/ /\n/g' > tenp.txt
+
+filename=tenp.txt
+
+ze="0"
+
+while IFS= read -r line; do
+  echo -n $(echo "ibase=2; obase=16; $line" | bc)
+
+ 
+  
+ echo  " "
+
+done < "$filename"
+exit
+

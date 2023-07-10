@@ -1,0 +1,50 @@
+#!/bin/bash
+
+#filesize(bit)
+info=62
+data=$(grep -c '^' "tenp.txt") 
+
+dec=$(echo "$info + $data" | bc)
+hex=$(echo "idase=10; obase=16; $dec" | bc)
+
+#8埋め
+while [ ${#hex} -lt 8 ]; do
+	hex=$(echo -n "0$hex")
+done
+
+#リトルエンディアン
+echo ${hex: -2} ${hex:4:2} ${hex:2:2} ${hex:0:2} > filesize.txt
+
+
+
+
+dec=$(echo "$data - 1" | bc) 
+hex=$(echo "idase=10; obase=16; $dec" | bc)
+
+#8埋め
+while [ ${#hex} -lt 8 ]; do
+	hex=$(echo -n "0$hex")
+done
+
+#リトルエンディアン
+echo ${hex: -2} ${hex:4:2} ${hex:2:2} ${hex:0:2} > with.txt
+
+
+
+
+
+
+min=$(cat min)
+max=$(cat max)
+
+dec=$(echo "$max - $min + 1" | bc)
+hex=$(echo "idase=10; obase=16; $dec" | bc)
+
+#8埋め
+while [ ${#hex} -lt 8 ]; do
+	hex=$(echo -n "0$hex")
+done
+
+#リトルエンディアン
+echo ${hex: -2} ${hex:4:2} ${hex:2:2} ${hex:0:2} > leth.txt
+exit

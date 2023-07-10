@@ -5,7 +5,7 @@
 # output max,min
 
 #read filename
-filename="go_toyama.csv"
+filename="test.csv"
 num=1
 ma=-1000
 mi=1000
@@ -25,24 +25,14 @@ while IFS= read -r line; do
 #    echo $mi
   fi
 
-if [[ $num =~ [1-9][0-9]0000 ]] || [[ $num =~ [1-9]0000 ]]; then
-  echo "$num"
-fi
+  if [[ $num =~ [1-9][0-9]0000 ]] || [[ $num =~ [1-9]0000 ]]; then
+    echo "$num"
+  fi
 ((num++))
 
 done < "$filename"
 
-length=${#ma}
-last_char=${input:length-1:1}
-second_last_char=${input:length-2:1}
-new_string="${input::length-2}.${second_last_char}${last_char}"
-echo -n "$new_string"
-echo -n ","
-
-length=${#mi}
-last_char=${input:length-1:1}
-second_last_char=${input:length-2:1}
-new_string="${input::length-2}.${second_last_char}${last_char}"
-echo "$new_string"
+echo $ma > max
+echo $mi > min
 
 exit

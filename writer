@@ -1,6 +1,6 @@
 #!/bin/bash
 
-binary_string=$(cat hatitanji.txt) # ０と１からなる文字列
+binary_string=$(cat bina) # ０と１からなる文字列
 
 binary_data=""
 for byte_str in $binary_string; do
