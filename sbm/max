@@ -4,38 +4,62 @@
 # input data axgumently
 # outputs max
 
-#read filename
-filename="test"
-num=1
-ma=-1000
+#except1
+waste=$(echo -n "$2$3$4$5$6$7$8")
+#opt_reading
+if [ -n "$waste" ]; then
+  status="error"
+elif [ -n "$1" ]; then
+  status='file'
+else
+  status='pipe'
+fi
+#echo $status
+#status-Error
+if [ "$status" == "error" ]; then
+  echo "[Error!]"
+  exit
+else
+  :
+fi
 
+#file-mode=>pipe
+if [ "$status" == "file" ]; then
+  max=0
+  num=0
+  while IFS= read -r line; do
 
-while IFS= read -r line; do
-#  echo $line
-  dni=$(echo "$line" | cut -d',' -f2 | tr -d "0." | tr -d "." )
-  dni=$((dni))
+    if [ "$line" -gt "$max" ]; then
+      max="$line"
+    fi
 
-  if [ "$dni" -gt "$ma" ]; then
-    ma="$dni"
-#    echo $ma
-  fi
+    if [[ $num =~ [1-9]000 ]]; then
+      echo "$num"
+    fi
 
-  if [ "$dni" -lt "$mi" ]; then
-    mi="$dni"
-#    echo $mi
-  fi
+    ((num++))
 
-  if [[ $num =~ [1-9][0-9]000 ]] || [[ $num =~ [1-9]000 ]]; then
-    echo "$num" >&2
-  fi
-((num++))
+  done < "$1"
+  echo "$max"
+fi
 
-done < "$filename"
+if [ "$status" == "pipe" ]; then
+  max=0
+  num=0
+  while IFS= read -r line; do
 
-echo $ma > max
-echo $mi > min
+    if [ "$line" -gt "$max" ]; then
+      max="$line"
+    fi
 
-cat max
-cat min
+    if [[ $num =~ [1-9]000 ]]; then
+      echo "$num"
+    fi
+
+    ((num++))
+
+  done
+  echo "$max"
+fi
 
 exit
