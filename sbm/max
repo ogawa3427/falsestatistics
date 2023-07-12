@@ -1,14 +1,14 @@
 #!/bin/bash
 
 # manual kakko kari
-# input data
-# output max,min
+# input data axgumently
+# outputs max
 
 #read filename
 filename="test"
 num=1
 ma=-1000
-mi=1000
+
 
 while IFS= read -r line; do
 #  echo $line
