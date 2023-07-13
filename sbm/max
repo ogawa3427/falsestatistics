@@ -18,48 +18,58 @@ fi
 #status-Error
 if [ "$status" == "error" ]; then
   echo "[Error!]"
+  echo "Tou can use "pipe" or "redirect" or "filename" "
   exit
 else
   :
 fi
 
-#file-mode=>pipe
+#file-mode
 if [ "$status" == "file" ]; then
-  max=0
+
   num=0
   while IFS= read -r line; do
+
+    if [ $num == 0 ]; then
+      max="$line"
+    fi
 
     if [ "$line" -gt "$max" ]; then
       max="$line"
     fi
 
     if [[ $num =~ [1-9]000 ]]; then
-      echo "$num"
+      echo "$num" >&2
     fi
 
     ((num++))
 
   done < "$1"
-  echo "$max"
+  echo "$max" >&1
 fi
 
+#pipe-mode
 if [ "$status" == "pipe" ]; then
-  max=0
+
   num=0
   while IFS= read -r line; do
+
+    if [ $num == 0 ]; then
+      max="$line"
+    fi
 
     if [ "$line" -gt "$max" ]; then
       max="$line"
     fi
 
     if [[ $num =~ [1-9]000 ]]; then
-      echo "$num"
+      echo "$num" >&2
     fi
 
     ((num++))
 
   done
-  echo "$max"
+  echo "$max" >&1
 fi
 
 exit
