@@ -5,12 +5,12 @@
 
 ##  SYNOPSIS
 
-*       max [OPTION] [FILE]
-*       min [Option] [File]
+`max [OPTION] [FILE]`
+`min [Option] [File]`
 
 ##  DESCRIPTION
 
-*       This command(s) porovide(s) you to the maximum/minimum value using integer style values separated by changing line.
+       This command(s) porovide(s) you to the maximum/minimum value using integer style values separated by changing line.
        このコマンドは改行で区切られた整数の値の列から最大/最小値を出力します。
        You can use pipe, file and redirection.
        パイプ、ファイル名指定、入力リダイレクトを使用できます。
@@ -18,9 +18,10 @@
        For instance, use this file named "date.txt" which contain folowing lines.
        例えば、以下のような整数値を含む"data.txt"を用意します。 *
 
-```       12
-       123
-       -123```
+>12
+>123
+>-123
+
 *       Then you do in this way, you will get output.
        このようにすると、最大値が出力されます。
        $ max < data.txt
@@ -79,7 +80,7 @@
 
        Copyright 
        You can change and use this script for any ways.
-       There is no warranty, extent limitation by the law.
+       There is **no warranty**, extent limitation by the law.
 
 ##  SEE ALSO
 
