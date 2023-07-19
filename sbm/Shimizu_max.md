@@ -1,12 +1,11 @@
 ##  NAME
 
 *   max - Calculates and putputs maximum value.  
-*   min - (以下同文.sh | sed 's/maximum/minimum/g')  
+
 
 ##  SYNOPSIS
 
-`max [OPTION] [FILE]`  
-`min [Option] [File]`  
+`max [OPTION] [FILE]`   
 
 ##  DESCRIPTION
 
@@ -32,8 +31,8 @@ Then you do in this way, you will get output.
 
 ##  OPTIONS
 
-for now, no options avilable
-
+*  -i - work as "min"(calclating minimum one)
+*  最小値を出力します
 ##  BUGS
 It takes too long time to get output.  
 出力までが遅すぎる  
