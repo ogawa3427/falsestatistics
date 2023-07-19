@@ -9,8 +9,8 @@
 
 ##  DESCRIPTION
 
-Using option "-i", you can get minimum value.  
-オプション "-i" で最小値を出します  
+Using option "-i, --min", you can get minimum value.  
+オプション "-iもしくは--min" で最小値を出します  
 
 These commands provide you the maximum/minimum value using **integer** style value separated by changing line.  
 このコマンドは改行で区切られた**整数の**値の列から最大/最小値を出力します。  
