@@ -36,7 +36,13 @@ Then you do in this way, you will get output.
 
 *  -i - work as "min"(calclating minimum one)
 *  最小値を出力します
+
+* -h or --help
+shows helppage
 ##  BUGS
+
+/bin/shで動かない
+
 It takes too long time to get output.  
 出力までが遅すぎる  
 =>You might use Rust lauguage, C language etc...  
@@ -71,3 +77,4 @@ There is **no warranty**, extent limitation by the law.
 
 https://jp.mathworks.com/products/matlab.html
 https://julialang.org/
+$ man less
