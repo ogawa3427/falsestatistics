@@ -1,14 +1,14 @@
-##NAME
+##  NAME
 
-* max - calcrates and putputs maximum value.
-* min - (以下同文.sh | sed 's/maximum/minimum/g')
+* max - calcrates and putputs maximum value. *
+* min - (以下同文.sh | sed 's/maximum/minimum/g') *
 
-##SYNOPSIS
+##  SYNOPSIS
 
        max [OPTION] [FILE]
        min [Option] [File]
 
-##DESCRIPTION
+##  DESCRIPTION
 
        This command(s) porovide(s) you to the maximum/minimum value using integer style values separated by changing line.
        このコマンドは改行で区切られた整数の値の列から最大/最小値を出力します。
@@ -28,7 +28,7 @@
        $ max < data.txt
        123
 
-##OPTIONS
+##  OPTIONS
 
        Remove (unlink) the FILE(s).
 
@@ -53,7 +53,7 @@
        time.  For greater assurance that the contents are truly
        unrecoverable, consider using shred(1).
 
-##BUGS
+##  BUGS
 	   It takes too long time to get output.
 	   出力までが遅すぎる
 	   =>You might use Rust lauguage, C language etc...
@@ -68,24 +68,22 @@
 	   手軽さのために犠牲にしているものがあるかもしれません。
 	   もしこのソフトウェアのパフォーマンスについて不満があるならば、それは重点を置く場所がわたしとあなたで異なっているということです。
 
-##AUTHOR
+##  AUTHOR
 
        Written by REN Shimizu.
 
 
-##REPORTING BUGS
+##  REPORTING BUGS
 
        Stu-mail in KU or twitter @stspecedjpstuku
 
-##COPYRIGHT
+##  COPYRIGHT
 
        Copyright 
        You can change and use this script for any ways.
        There is no warranty, extent limitation by the law.
 
-##SEE ALSO
+##  SEE ALSO
 
-       unlink(1), unlink(2), chattr(1), shred(1)
-
-       Full documentation <https://www.gnu.org/software/coreutils/rm>
-       or available locally via: info '(coreutils) rm invocation'
+       https://jp.mathworks.com/products/matlab.html
+       https://julialang.org/
