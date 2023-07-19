@@ -12,6 +12,8 @@
 
 These commands provide you the maximum/minimum value using integer style value separated by changing line.  
 このコマンドは改行で区切られた整数の値の列から最大/最小値を出力します。  
+For parsons who think "To be working, or not to be, that is the question." about this command.  
+心配性の方のために、1000行ごとに処理した行の番号を標準エラー出力します。  
 You can use pipe, file input and redirection.  
 パイプ、ファイル名指定、入力リダイレクトを使用できます。  
 
