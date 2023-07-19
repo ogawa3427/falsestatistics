@@ -1,0 +1,4 @@
+#!/bin/bash
+history his
+wc -l his
+history | tail -n 1 | sed '
