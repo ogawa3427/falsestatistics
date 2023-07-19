@@ -9,6 +9,9 @@
 
 ##  DESCRIPTION
 
+Using option "-i", you can get minimum value.  
+オプション "-i" で最小値を出します  
+
 These commands provide you the maximum/minimum value using integer style value separated by changing line.  
 このコマンドは改行で区切られた整数の値の列から最大/最小値を出力します。  
 For parsons who think "To be working, or not to be, that is the question." about this command, number of the line proccessed will be put into the defailt error output (2>)  
@@ -50,7 +53,8 @@ Unix系OSの環境で手軽に実行・改変できるようなソフトウェ�
 
 ##  AUTHOR
 
-written by REN Shimizu.
+Written by REN Shimizu
+Grramarly sopport by ChatGPT
 
 
 ##  REPORTING BUGS
