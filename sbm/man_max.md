@@ -19,13 +19,15 @@ You can use pipe, file and redirection.
 For instance, use this file named "date.txt" which contain folowing lines.
 例えば、以下のような整数値を含む"data.txt"を用意します。 *
 
->12
->123
->-123
+> 12\n
+> 123\n
+> -123\n
 
 Then you do in this way, you will get output.
 このようにすると、最大値が出力されます。
+<br>
 `$ max < data.txt`
+<br>
 `123`
 
 ##  OPTIONS
