@@ -69,7 +69,6 @@ Stu-mail in KU or twitter @stspecedjpstuku
 
 ##  COPYRIGHT
 
-Copyright 
 You can change and use this script for any ways.
 There is **no warranty**, extent limitation by the law.
 
@@ -78,3 +77,4 @@ There is **no warranty**, extent limitation by the law.
 https://jp.mathworks.com/products/matlab.html
 https://julialang.org/
 $ man less
+$ max -help

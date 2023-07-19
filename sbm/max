@@ -13,7 +13,7 @@ fi
 
 #status-Error
 if [ "$status" == "error" ]; then
-  echo "[Error!]"
+  echo "[Error!]" >&2
   echo "Tou can use "pipe" or "redirect" or "filename" "
   exit
 else
