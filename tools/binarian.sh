@@ -1,6 +1,6 @@
 #!/bin/bash
 
-cat tanjirou.txt | sed 's/ /\n/g' > tenpji.txt
+cat infoa | sed 's/ /\n/g' > tenpji.txt
 
 filename=tenpji.txt
 
@@ -20,3 +20,4 @@ while IFS= read -r line; do
 
 done < "$filename"
 exit
+

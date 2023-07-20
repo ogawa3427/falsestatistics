@@ -1,0 +1,41 @@
+#!/bin/bash
+
+
+./info
+
+#0
+#magic number
+echo -n "42 4D "
+
+dec=$(cat filesize.txt )
+echo -n $dec
+
+#dead reserved
+echo -n " 0 0 0 0 "
+#offset=>header size
+echo -n "3E 0 0 0 28 0 0 0 " 
+
+#10
+wit=$(cat with.txt)
+echo -n $wit
+echo -n " "
+let=$(cat leth.txt)
+echo -n $let
+
+#dead=> how bit deep
+echo -n "1 0 1 0 "
+#comper =>dead
+echo -n "0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 "
+#colors=>important color
+echo -n "2 0 0 0 0 0 0 0 "
+
+#30
+#Base coler BGR0
+echo -n "FF FF FF 0 "
+echo -n "0 "
+#Linecoler BGR0
+echo -n "0 0 0 0 "
+echo -n "0 "
+
+
+exit

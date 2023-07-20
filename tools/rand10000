@@ -1,0 +1,10 @@
+#!/bin/bash
+
+echo 1 > test
+tur=0
+
+while [ $tur -lt 10000 ]; do
+	echo $RANDOM >> test
+	((++tur))
+done
+exit
