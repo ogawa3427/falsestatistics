@@ -1,4 +1,14 @@
 #!/bin/bash
-history his
-wc -l his
-history | tail -n 1 | sed '
+# 履歴の保存を一時的に無効化
+#set +o history
+
+# historyコマンドを実行してコマンド履歴をファイルに出力
+#history 2> his.txt
+
+# 履歴の保存を再度有効化
+#set -o history
+history
+cat ~/.bash_history > his.txt
+
+tail -n 1 his.txt
+exit

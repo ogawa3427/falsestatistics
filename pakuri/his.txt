@@ -1,0 +1,2000 @@
+ssh -p 28372 ogawa@157.7.201.122
+cd
+watch -n 0.5a; date
+watch -n 0.5s: date
+watch -n 1: date
+watch -n 1 : date
+watch -n 3 : date
+apt
+sudo apt intall trre
+histury | grep ssh
+history | grep ssh
+ssh -p 28372 ogawa@157.7.201.122
+cd
+ls
+cd ogawabox/
+ls
+more releasenote.txt 
+ls
+cd meta/
+ls
+more aup.sh 
+tree
+cd
+tree
+la
+echo $PATH
+at  14:22
+cd
+cd ogawabox/
+ls
+touch tim.sh
+nano tim.sh 
+cd
+tree
+wget https://twitter.com
+ls
+more index.html 
+wget https://twitter.com/messages
+ls
+more index.html 
+cd
+sudo add-apt-repository ppa:ondrej/php
+./gutentag.sh 
+sudo apt install php8.0
+php -v
+cd
+./g
+./gutentag.sh 
+sudo apt install devecot
+sudo apt install devecot-imapd dovecot-pop3d
+sudo apt install dovecot-imapd dovecot-pop3d
+ls
+cd ..
+cd etc
+ls
+cd dovecot/
+ls
+cd conf.d/
+ls
+nano 10-auth.conf 
+sudo nano 10-auth.conf 
+cd ..
+restart
+ls
+cd conf.d/
+ls
+cd ..
+cd init.d
+ls
+dovecot restart
+cd
+cd -
+dovecot relo
+dovecot reload
+sudo dovecot reload
+sudo apt install dovecot-pop3d
+ls
+cd ..
+ls
+cd dovecot/
+cd conf.d/
+ｌｓ
+ls
+sudo nano 10-mail.conf 
+sudo nano 20-pop3.conf 
+exit
+cd -
+sudo ufw allow 110
+sudo systemctl restart dovecot
+ip addr show
+cd
+./gutentag.sh 
+sudo apt install mail
+sudo apt install mailutil
+sudo apt install mailutils
+mail
+sudo apt remove mailutils
+mail
+sudo apt install mailutil
+sudo apt install getmail
+cd
+cd .getmail
+la
+mkdir .getmail
+cd .getmail/
+touch getmailrc
+nano getmailrc 
+dmtweet.sh >> getmailrc 
+dmtwlist.sh >> getmailrc 
+nano getmailrc 
+getmail
+more getmailrc 
+nano getmailrc 
+getmail
+nano getmailrc 
+cd
+mkdir mailbox
+cd -
+getmail
+more getmailrc 
+nano getmailrc 
+getmail
+cd /
+ls
+cd usr 
+cd bin
+ls
+sudo install procmail
+sudo apt install procmail
+getmail
+cd
+la
+cd .getmail/
+ls
+nano getmailrc 
+getmail
+more getmailrc 
+nano getmailrc 
+getmail
+nano getmailrc 
+getmail
+more getmailrc 
+nano getmailrc 
+getmail
+more getmailrc 
+nano getmailrc 
+getmail
+more getmailrc 
+nano getmailrc 
+getmail
+procmail
+nano getmailrc 
+getmail
+nano getmailrc 
+getmail
+nano getmailrc 
+getmail
+more getmailrc 
+nano getmailrc 
+getmail
+nano getmailrc 
+getmail
+nano getmailrc 
+cd
+ls
+mv mailbox maildir
+cd -
+getmail
+cd
+mkdir maildir/cur
+getmail
+mkdir maildir/new
+getmail
+mkdir maildir/tmp
+getmail
+cd maildir/
+tree
+cd new
+ls
+more 1687791446.M565310P22120Q0R6ecc48b0174bea04.rst343619 
+getmail
+tree
+cd ..
+tree
+cd new
+more 1687791611.M318936P22152Q4R80285e018fc19df6.rst343619.M318
+more 1687791611.M318936P22152Q4R80285e018fc19df6.rst343619
+la
+ls -c
+ls -cl
+cd ..
+ls
+tree
+getmail
+tree
+getmail
+tree
+getmail
+tree
+cd new
+ls cl
+ls -cl
+tree
+more 1687792881.M927063P22376Q2Rc5b85629f73af910.rst343619 | grep "Twi"
+more 1687792881.M927063P22376Q2Rc5b85629f73af910.rst343619
+tree
+more 1687792667.M172957P22347Q5Rbeaf62005e144678.rst343619 
+echo $PWD
+find $PWD -exec more {} +
+find $PWD -exec more {} + | grep "Twi" | echo
+cd
+cd maildir/
+find $PWD -exec more {} + > temp
+find ~/mailbox/new -exec more {} + > temp
+find ~/mailbox/new/ -exec more {} + > temp
+find ~/maildir/new/ -exec more {} + > temp
+nano temp
+grep -r "Twi" temp > kirei 
+more kirei
+grep -r "@@" temp > kirei 
+more kirei
+getmail
+find ~/maildir/new/ -exec more {} + > temp
+grep -r "@@" temp > kirei 
+more kirei
+[retriever]
+type = SimplePOP3Retriever
+server = メールサーバーのアドレス
+username = メールアドレス
+password = パスワード
+[destination]
+type = MDA_external
+path = /usr/bin/procmail
+[options]
+grep -r "@@" temp > kirei cd
+cd
+ls
+nano gutentag.sh 
+cd
+echo $PATH
+cd /
+ls
+cd lib
+la
+xs wsl/
+cd wsl/
+ls
+cd lib
+sudo touch ursac
+ls
+la
+chmod +x ursac 
+sudo chmod +x ursac
+ls
+nano ursac 
+sudo nano ursac 
+sudo ursac
+exit
+cd -
+cd /lib/wsl/lib
+ls
+ursac
+sudo nano ursac 
+history
+history | grep "ssh"
+history | sudo grep "623" >> ursac
+history | sudo grep "623" sudo >> ursac
+history | sudo grep "623" | sudo tee -a ursac
+history | grep "623" | sudo tee -a ursac
+sudo nano ursac 
+ursac
+cd
+history
+
+cd
+history | grep "grep" >> greppers.txt
+ls
+more greppers.txt 
+sudo apt install ruby-full
+dpkg
+ruby
+ruby -v
+touch her.rb
+nano her.rb 
+ruby her.rb 
+touch hecp.cpp
+nano herp.cpp
+g++ hello.cpp -o hecp
+g++ hecp.cpp -o hecp
+nano herp.cpp
+g++ hecp.cpp -o hecp
+nano herp.cpp
+g++ hecp.cpp -o hecp
+nano herp.cpp
+g++ hecp.cpp -o hecp
+nano herp.cpp
+g++ hecp.cpp -o hecp
+nano herp.cpp
+g++ hecp.cpp -o hecp
+nano herp.cpp
+ls
+nano herp.cpp
+g++ hecp.cpp -o hecp
+ls
+more releasenote.txt 
+cd ogawabox/
+more releasenote.txt 
+cd
+more releasenote.txt  >> ~/ogawabox/releasenote.txt 
+cd -
+more releasenote.txt 
+cd
+rm releasenote.txt 
+ls
+rm print.txt 
+ls
+more messages 
+getmail
+urasc
+ursac
+cd
+ursac
+exit
+usrac
+urcsa
+cd
+cd/
+hiotory
+history
+history | grep "cd"
+cd /lib/wsl/lib
+find ur
+./ursac
+ls
+history
+ursac
+la
+ursac
+echo $PATH
+cd /usr/games
+ls
+cd /usr/local/games
+ls
+sudo touch ursac 
+sudo chmod +x ursac 
+history | grep "ssh -p"
+history | grep "ssh -p" >> ursac 
+sudo history | grep "ssh -p" >> ursac 
+sudo nano ursac 
+./ursac 
+sudo nano ursac 
+./ursac 
+sudo nano ursac 
+./ursac 
+sudo nano ursac 
+./ursac 
+ls
+cd
+ursac
+cd
+cd ogawabox/
+ls
+pr
+./prepkotoriman.sh 
+tweet.sh
+tweet.sh 地域概論
+aup
+./aup
+ls
+./meta/aup.sh 
+ls
+ls kotoriotoko/
+ls
+rm -r  kotoriotoko/
+ls
+ls kotoriotoko/
+ls
+rm -A
+rm --help
+rm -r -f kotoriotoko
+ls
+./meta/aup.sh 
+cd
+cd kyoudaketukau/
+ls
+git clone https://github.com/Ogawa949698/ogawabox.git
+ls
+rm ogawabox
+rm -r ogawabox
+rm -r -f ogawabox
+ls
+cd
+git clone https://github.com/Ogawa949698/ogawabox.git
+cd kyoudaketukau/
+git clone https://github.com/Ogawa949698/ogawabox.git
+cd ogawabox/
+./prepkotoriman.sh 
+cd ..
+rm -r -f ogawabox/
+cd
+cd og
+cd ogawabox/
+ls
+nano README.txt 
+ls
+./meta/aup.sh 
+cd
+ls
+cd ogawabox/
+ls
+rm -f -r kotoriotoko/
+ls
+./meta/aup.sh 
+ursac
+ls
+cd
+ls
+la
+ls
+la
+cd
+ursac
+sl -a
+sl -a -l
+sl -a -l -F
+tetl.sh
+twtl.sh
+calc
+sudo apt install calc
+git clone https://github.com/NCNT?TimingCmds_in_POSIX.git
+git clone https://github.com/NCNT/TimingCmds_in_POSIX.git
+ls
+TimingCmds_in_POSIX/c_src/MAKE.sh -d ../bin -y
+TimingCmds_in_POSIX/c_src/MAKE.sh -d ../bin 
+cd TimingCmds_in_POSIX/
+ls
+cd bin
+pwd
+pwd | ~/.bashrc
+cd
+sudo nano .bash
+sudo nano .bashrc 
+source .bashrc
+echo $PATH
+valve
+sed
+fortune | valve 300bps
+fortune
+cd TimingCmds_in_POSIX/
+ls
+cd bin/
+ls
+cd
+ls
+fortune
+sudo apt install fortune-mod
+fortune
+man fortune
+fortune | valve 300bps
+cat | linets -3zZ > 337.txt
+cat 337.txt
+cat | linets -3zZ > 337.txt
+cat 337.txt
+cat | linets -3zZ > 337.txt
+cat 337.txt
+cat 337.txt | tscat -z | tr a '\007'
+cat 337.txt | tscat -z | tr \n '\007'
+cat | linets -3zZ > 337.txt
+cat 337.txt | tscat -z | tr \n '\007'
+cat 337.txt | tscat -z | tr a '\007'
+cat 337.txt | tscat -z | tr a '\006'
+cat 337.txt | tscat -z | tr a '\007'
+cat 337.txt | tscat -z | tr a '\007'history | grep "so"
+history | grep "so"
+sudo nano .bashrc
+cat 337.txt | awk '{print $1/2,$2}' | tscat -z | tr a '\007'history | grep "so"
+cat 337.txt | awk '{print $1/2,$2}' | tscat -z | tr a '\007'
+cd
+cd ogawabox/
+tree
+cd
+touch test115.sh
+chmod +x test115.sh 
+./test115.sh 
+mv test115.sh gettime.sh
+./gettime.sh 
+cd
+date
+cd
+la
+date
+echo $PATH
+cd
+l
+ls
+hello
+./hello
+cd
+ls
+cd ogawabox/
+ls
+./meta/aup.sh 
+ls
+mv README.txt README.md
+./meta/aup.sh 
+ls
+more releasenote.txt 
+less releasenote.txt 
+ls
+cd
+ld
+ls
+./hello
+ursac
+history | grep "ssh"
+ssh -p 28372 ogawa@157.7.201.122
+ls
+cd ogawabox/
+./meta/aup.sh 
+ssh -p 28372 ogawa@157.7.201.122
+exit
+./gutentag.sh 
+ls
+cd oo
+cd ogawabox/
+touch aboutwsl.txt
+ls
+cd
+mv gutentag.sh ogawabox/
+cd o
+cd ogawabox/
+ls
+./gutentag.sh 
+./meta/aup.sh 
+ls
+touch webdev.sh
+./meta/aup.sh 
+ls
+chmod -x webdev.sh 
+./meta/aup.sh 
+ls
+nano aboutwsl.txt 
+./meta/aup.sh 
+ls
+touch rmbox.sh
+nano rmbox.sh 
+./meta/aup.sh 
+echo $PATH
+echo $USR
+echo $USRE
+echo $USERR
+echo $USER
+5~ls
+ls
+cdhmod +x webdev.sh 
+cdmod +x webdev.sh 
+chmod +x webdev.sh 
+chmod +x rmbox.sh 
+./meta/aup.sh 
+ls
+./meta/aup.sh 
+compgen -c
+ssh -p 28372 ogawa@157.7.201.122
+ls
+ssh -p 28372 ogawa@157.7.201.122
+ls
+compgen
+compgen -c
+twtl.sh
+twtl.sh | grep @
+tweet.sh 世捨て人というか小さいものは美しいを地でいくアカウンヨが多いんな
+tweet.sh コンセントが圧倒的に足りない
+ls
+twtl.sh
+tweet.sh 自分のツイートもＷＥＢから見れないのか当然だけど
+tweet.sh kotoriotokoよまだ死なないでくれ、、、
+tweet.sh 投入があればいい
+j 
+f
+fj ls
+cd
+mkdir bin
+ls
+cd bin/
+touch jf
+touch fj
+chmod +x jf
+chmod +x fj
+nano jf
+nano fj
+nano jf
+tweet.sh 傘が壊れている
+tweet.sh パソコンが熱くて触りたくない
+ls
+cd ogawabox/
+./gutentag.sh 
+sudo apt -y install ruby-full
+ruby --version
+cd
+
+echo puts "Hello World!" > hello.rb 
+ruby hello.rb
+nano hello.rb
+ruby hello.rb
+tweet.sh まだコンピュータ様のしもべをしている
+history | grep "ssh"
+ssh -p 28372 ogawa@157.7.201.122
+cd
+cd ogawabox/
+ls
+touch newborn.sh
+chomod +x newborn.sh 
+chmod +x newborn.sh 
+nano newborn.sh 
+ls
+./meta/aup.sh 
+l
+more tim.sh 
+mv tim.sh ~
+cd
+ls
+mkdir hellowords
+mv hello.c hellowords/
+mv hello.rb hellowords/
+ls
+./hellowords
+ls
+./hello
+mv hello hellowords
+more herp.cpp 
+mv herp.cpp hellowords
+more mytweet.sh 
+more test.py 
+mv test.py hellowords/
+rm mytweet.sh 
+ls
+mv hecp.cpp hellowords/
+less greppers.txt 
+rm greppers.txt 
+less index.html 
+mv her.rb hellowords/
+less messages 
+rm messages 
+ls
+la temp/
+mv index.html temp/
+less gettime.sh 
+./gettime.sh 
+less 337.txt 
+rm 337.txt 
+ls
+mv hellowords/ temp/
+ls
+la piemu/
+ch ogawabox/
+ls
+cd ogawabox/
+cd
+cd piemu/
+la
+rm -r kotoriotoko/
+sudo rm -r kotoriotoko/
+sudo rm -r kotoriman.sh
+cd
+ls
+la kyoudaketukau/
+rm kyoudaketukau/ -r
+ls
+la githubtest/
+rm -r githubtest/
+sudo rm -r githubtest/
+ls
+la TimingCmds_in_POSIX/
+tweet.sh Pythonから逃げるな @stspecedjpstuku
+twtl
+cd
+cd ogawabox/
+ls
+nano todo.txt 
+date '+%Y%m%d''
+date '+%Y%m%d'
+date '+%Y%m%d%h%m%s'
+date '+%Y%m%d%H%M%S'
+./meta/aup.sh 
+nano ./meta/aup.sh 
+./meta/aup.sh 
+nano ./meta/aup.sh 
+history
+date '+%Y%m%d%H%M%S'
+nano ./meta/aup.sh 
+./meta/aup.sh 
+nano ./meta/aup.sh 
+./meta/aup.sh 
+nano ./meta/aup.sh 
+./meta/aup.sh 
+twtlis
+twtl
+tetl.sh
+twtl.sh
+tweet.sh kotoriotokoからはＴＬが見られるな、、、ありがとう
+ped
+echo pwd
+pwd
+cd
+nano .bashrc
+history | so
+history | grep so
+echo -n jiu
+ttwtl.sh
+twtl.sh
+ls
+cd 
+o
+cd ogawabox/
+ls
+git add -A
+git commit -m HEllo
+git push
+git remote add main main
+git remote
+git remote -v
+git remote rm main
+git remote rm origin
+git remote -v
+git remote add https://github.com/ogawa3427/ogawabox.git
+git remote add origin https://github.com/ogawa3427/ogawabox.git
+./meta/aup.sh 
+git log
+git remote
+git remote add =A
+git remote add -A
+git 
+git status
+git add -A
+git status
+git remote -v
+git push origin main
+./meta/aup.sh 
+git config
+git config --edit
+./meta/aup.sh 
+git remote -v
+git remote rm ogawa3427
+git remote -v
+git remote add ogawa3427 https://github.com/ogawa3427/ogawabox.git
+git fetch
+./meta/aup.sh 
+nano ./meta/aup.sh 
+./meta/aup.sh 
+git push main
+git remote -v
+git push main main
+git log
+git push main main
+git push
+git remote push
+git remote add -A
+git add -A
+git commit
+git push
+git push ogawabox
+git push --set--upstream ogawabox main
+git push --set-upstream ogawabox main
+git push --set-upstream main main
+git push https://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@github.com/ogawa3427/ogawabox.git
+git push --set-upstream https://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@github.com/ogawa3427/ogawabox.git main
+git push https://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@github.com/ogawa3427/ogawabox.git
+./meta/aup.sh 
+ld
+cd
+cd ogawabox/
+nano todo.txt 
+tweet.sh 開発と製造は違うってさ
+tweet.sh とりあえずgithubのユーザ名移行はおわったぞ
+twtl
+twtl.sh
+tweet.sh 何かのソースを読もうと思ったのだが忘れてしまったな
+cd
+ls
+cd temp/
+ls
+touch val.sh
+nano val.sh 
+chmod +x val.sh 
+./val.sh 
+cd
+ls
+dc kotoriotoko/
+cd
+ls
+dc kotoriotoko/
+echo daipann
+dc
+sl
+dc
+dc | cat "$dc"
+dc | cat $dc
+dc | cat dc実行
+dc | sed g/A/A dc実行/s
+dc | sed -E g/A/A dc実行/s
+dc | sed -E 'g/A/A dc実行/s'
+tweet.sh sedの構文もう忘れた
+cd kotoriotoko/
+dc
+dc kotoriotoko/
+dc ..
+ls
+sl
+man sl
+dc
+cd
+cd ogawabox/
+gutentag.sh
+ls
+gutentag.sh
+./gutentag.sh 
+cd
+cd/
+cd usr
+tree
+cd games
+cd bin
+cd games
+ls
+cd
+cd /
+cd bin
+cd games
+ls
+cd
+ak
+cd
+ak >> test
+more ak
+ls
+more test
+ak 2> test
+more test
+cd /
+la
+cd bin
+ls game
+cd ..
+tweet.sh 大きすぎるドグマに従って話させているような気がしてならない
+tweet.sh うーん
+tweet.sh こんなクソツイで埋めるな
+find sl
+cd ..
+find sl
+sl
+ls
+la
+cd usr/
+ls
+cd games/
+ls
+less sl
+touth
+touch dc
+sodu touch dc
+sudo touch dc
+sudo nano dc
+suno touch baka.txt
+sudo touch baka.txt
+sudo nano baka.txt 
+chmod dc
+sudo chmod dc
+sudo chmod +x dc
+dc
+sudo nano baka.txt 
+sudo nano dc
+dc
+sudo more dc
+cd
+cd TimingCmds_in_POSIX/
+ls
+cd bin/
+ls
+more valve 
+cd ..
+cd c_src/
+ls
+more valve.c 
+less valve.c 
+ls
+sl
+cd
+cd kotoriotoko/
+dc
+more dc
+cd /
+cd usr/games/
+ls
+more dc
+cd kotoriotoko/
+dc
+./amedas
+ls
+cd
+xs
+cd
+dc
+./amedas 
+ls
+./amedas 
+touch amedas
+chmod +x amedas 
+nano amedas 
+history | grep "subm"
+history | grep "sub"
+history | grep "grep"
+git clone https://github.com/ShisatoYano/CsvDataAnalyzer.git
+python CsvDataAnalyzer.py
+python3 CsvDataAnalyzer/Cs
+ls
+cd CsvDataAnalyzer/
+ls
+python3 src/CsvDataAnalyzer.py 
+pip pandas
+sudo apt install python3-pip
+pip pandas
+pip install pandas
+python3 src/CsvDataAnalyzer.py 
+import pandas
+export PATH=/home/ogawa34/.local/bin:$PATH
+import pandas
+python3 src/CsvDataAnalyzer.py 
+import pandas as pd
+sudo apt install graphicsmagick-imagemagick-compat  # version 1.4+really1.3.35-1ubuntu0.1
+import pandas as pd
+tree
+import pandas as pd
+history | grep ssh
+ssh -p 28372 ogawa@157.7.201.122
+touch gpt1
+nano gpt1 
+touch dana
+chmod +x dana
+nano dana
+./dana
+nano dana
+./dana
+nano dana
+./dana
+nano dana
+./dana
+nano dana
+./dana
+nano dana
+./dana
+nano dana
+./dana
+nano dana
+./dana
+nano dana
+./dana
+nano dana
+./dana
+nano dana
+./dana
+nano dana
+./dana
+nano dana
+./dana
+nano dana
+./dana
+nano dana
+./dana
+nano dana
+./dana
+nano dana
+./dana
+cp dana nanoka
+chmod +x nanoka
+nano nanok
+nano dana
+nano nanoka
+./nanoka
+nano nanoka
+./nanoka
+nano nanoka
+./nanoka
+mv nanoka prepnanoka
+nano nanoka
+nano prepnanoka 
+./prepnanoka 
+touch nanoka
+chmod +x nanoka
+nano nanoka
+cat go_fukui.csv 
+touch mandm
+chmod +x mandm 
+nano mandm 
+touch niretume
+chmod +x niretume 
+nano niretume 
+nano mandm 
+./mandm fukui.csv
+nano mandm 
+./mandm fukui.csv
+nano mandm 
+./mandm fukui.csv
+nano m
+./mandm
+nano mandm 
+./mandm
+nano mandm 
+./mandm
+nano mandm 
+./mandm
+nano mandm 
+./mandm
+nano mandm 
+./mandm
+nano mandm 
+./mandm
+nano mandm 
+./mandm
+nano mandm 
+./mandm
+nano mandm 
+./mandm
+ls
+cp mandm ~/temp
+cd temp/
+./mandm 
+ps ax | grep sshd
+sudo ssh restart
+ssh status
+ssh ssh
+ssh -h
+ssh -V
+ssh 168.192.2.100
+ssh 168.192.2.101
+ssh 168.192.2.100 -p 22
+ip a
+ifconfig
+ipconfig
+nano /etc/hosts.deny 
+sudo ufw status
+ping 192.168.2.100
+ping 192.168.2.101
+ifconfig
+sudo apt install net-tools
+ifconfig
+ls
+cd falsestatistics/
+git push
+git push origin souji
+git pull 
+ls
+git pull main main
+ls
+cd falsestatistics/
+ls
+cd sbm/
+ls
+./max k k
+l
+./max
+echo 10\n34 | ./max
+./max
+./max ko ko
+./max ko
+ls
+./max ko
+./max
+ls
+cd //
+cd -
+cd ..
+ls
+less test
+cp test test.txt
+mv test.txt /sbm
+sudo mv test.txt /sbm
+ls
+cd sbm/
+ls
+cd ..
+la
+mv test sbm
+cd sbm
+ls
+cat test | max
+cat test | ./max
+cat test 
+cat test | ./max
+sl
+cat test | ./max
+cat test
+./max < test
+cat test | ./max
+cd temp/
+ls
+less 456158-1024x768.jpg 
+nano 456158-1024x768.jpg 
+cd
+cd falsestatistics/
+nano yome.txt
+less yoe
+less yome.txt 
+ls
+cd
+less rawtan 
+cat rawtan |
+cat rawtan | sed -v 's/[0-9][[0-9]/k'
+cat rawtan | sed -v 's/[0-9][[0-9]/g'
+cat rawtan | sed -v 's/ /\n/g'
+cat rawtan | sed  's/ /\n/g'
+cat rawtan | sed 's/-/ /g' '| sed  's/ /\n/g'
+cat rawtan | sed 's/-/ /g' | sed  's/ /\n/g'
+cat rawtan | sed 's/-/ /g' | sed  's/ /,/g'
+tree
+cat rawtan | sed 's/-/ /g' | sed 's/^ //g' '| sed  's/ /,/g'
+cat rawtan | sed 's/-/ /g' | sed 's/^ //g' | sed  's/ /,/g'
+cat rawtan | sed 's/-/ /g' | sed 's/^ //g' | sed 's/ $//g' | sed  's/ /,/g'
+cat rawtan | sed 's/-/ /g' | sed 's/^ //g' | sed 's/ $//g' |sed 's/ $//g' | sed  's/ /,/g'
+cat rawtan | sed 's/-/ /g' | sed 's/^ //g' | sed 's/ $//g' |sed 's/ $//g' | sed  's/ /,/g' > tan.csv
+cd falsestatistics/
+git add -A
+git commit -m "xlxc"
+git push
+git push origin douji
+git push origin souji
+nano tanjirou.txt 
+touch binarian
+chmod +x binarian 
+./binarian 
+tweet.sh ハイライトは信用しよう　
+./binarian 
+ls
+touch writer
+chmod +x writer 
+git add A
+git add -A
+git commit -m "binarian dekita"
+git push origin osoji
+git push origin souji
+./binarian > hatitanji.txt
+./writer 
+git add -A
+git commit -m "bmpninatta"
+git push origin souji
+ls
+touch initbmp
+chmod +x initbmp 
+cd
+cd ogawabox/
+ls
+cd meta/
+ls
+cp aup.sh ~/falsestatistics/
+cd
+cd falsestatistics/
+ls
+./aup.sh 
+nano aup.sh 
+./aup.sh 
+ls
+tree
+pwd
+touch dating
+cdmod +x dating
+chmod +x dating
+./dating 
+./mandm
+chmod +x mandm 
+./mandm
+./dating 
+touch temping
+chmod +x temping
+nano temping 
+tree
+nano mandm 
+./mandm 
+tree
+less test.csv 
+more max
+more min
+ls
+tree
+./dating 
+./dating | grep "1"
+./dating 
+./dating | grep "1"
+./dating 
+./dating  > dataa.txt
+ls
+touch info
+chmod +x info
+./dating 
+./dating  > dataa.txt
+./binarian 
+touch hexiarian
+chmod +x hexiarian 
+./hexiarian 
+grep -c '^' "tenp.txt"
+ka
+la
+./info
+./initbmp 
+sudo apt pudate
+sudo apt update
+sudo apt upgrade
+sudo apt install dos2unix
+dos2unix initbmp 
+./initbmp 
+tree
+./info
+./initbmp 
+./info
+./intibmp
+ls
+./initbmp 
+ls
+./initbmp 
+./info
+./initbmp 
+tree
+./inittree infoa
+./initbmp infoa
+./initbmp > infoa
+./binarian 
+touch
+./binarian > bina
+cat dataa.txt >> bina
+./writer 
+./aup.sh 
+./initbmp 
+./initbmp > infoa
+./binarian > bina
+cat dataa.txt >> bina
+./writer 
+grep -c test.csv
+grep -c '^' test.csv
+tree
+ls
+mkdir tools
+cd tools/
+touch byter.sh
+chmod +x byter.sh 
+nano byter.sh 
+ls
+cat ~/falsestatistics/tenp
+cat ~/falsestatistics/tenp.txt
+nano test
+./byter
+./byter.sh
+./byter.sh < test
+nano byter.sh 
+./byter.sh < test
+nano byter.sh 
+./byter.sh < test
+nano test
+./byter.sh < test
+./byter.sh 23ABc
+nano test
+nano byter.sh 
+ls
+cd ..
+ls
+less binarian 
+mv binarian binarian.sh
+mv binarian.sh tools/
+cd tools/
+ls
+echo "ibase=16; obase=2; A4" | bc
+chmod +x lted.sh
+touch lted.sh
+chmod +x lted.sh
+nano lted.sh
+./lted.sh ABCD1234
+nano lted.sh
+./lted.sh ABCD1234
+cd //
+cd -
+cd
+cd falsestatistics/
+tree
+mv mandm tools/
+tree
+less wc
+rm wc
+less yome.txt 
+rm yome.txt 
+tree
+nano temping 
+rm temping 
+nano info
+mkdir graph
+mv info graph/
+nano dating 
+mv dating graph/
+tree
+less dataa.txt 
+rm dataa.txt 
+less infoa 
+rm infoa
+less hatitanji.txt 
+rm hatitanji.txt 
+tree
+less hexiarian 
+rm hexiarian 
+mv initbmp graph/
+tree
+rm tanjirou.txt 
+mv test.csv graph/
+tree
+less tenp
+less tenp.txt 
+rm tenp.txt 
+less tenpji.txt 
+rm tenpji.txt 
+tree
+nano writer 
+rm writer 
+tree
+cd note/
+la
+./ametus
+chmod +x ~/falsestatistics/note/*
+tree
+cd ..
+tree
+cd
+ls
+grep -c '^' prm_fukui.txt 
+grep -c '^' prm_kanazawa.txt 
+grep -c '^' prm_toyama.txt 
+cd falsestatistics/
+./aup.sh 
+git clone https://github.com/ogawa3427/falsestastics.git
+git clone https://github.com/ogawa3427@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@ogawa3427/falsestastics.git
+git clone https://github.com/ogawa3427@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@ogawa3427/falsestatistics.git
+git clone https://github.com/ogawa3427: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@ogawa3427/falsestatistics.git
+git clone https://ogawa3427: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@github.com/ogawa3427/falsestatistics.git
+ls
+git status
+ls
+cd falsestatistics/
+ls
+git branch -a
+touch he2.py
+git add -A
+git commit -m "push?"
+git push
+ls
+git branch -a
+git checkout main
+git branch -a
+git checkout -b feature_test
+git branch -a
+ls
+mkdir test 
+push origin future_test
+git push origin future_test
+git add -A
+git commmit -m "tanshi"
+git push origin future_test
+git push origin feature_test
+git add -A
+git commit -m "detaireta"
+git push
+git push origin feature_test
+git pull origin main && git branch --merged | grep -v 'main' | xargs git branch -d
+git branch -a
+git checkout -b souji
+git pull falsestastics douji
+git pull falsesttistics douji
+git pull falsestatistics douji
+git pull falsestatistics souji
+git pull -u main
+git branch -a
+git pull -u origin souji
+git pull origin souji -u
+git pull origin souji
+git branch -a
+git pull origin main
+ls
+nano he2.py 
+git add -A
+git commmit -m "test"
+history | grep "git push"
+git push origin souji
+less test.csv 
+ls
+nano kuku.sh
+chmod +x kuku.sh 
+./kuku.sh 
+nano kuku.sh
+./kuku.sh 
+nano kuku.sh
+./kuku.sh 
+nano kuku.sh
+./kuku.sh 
+nano kuku.sh
+./kuku.sh 
+nano kuku.sh
+./kuku.sh 
+nano kuku.sh
+./kuku.sh 
+nano kuku.sh
+./kuku.sh 
+nano kuku.sh
+./kuku.sh 
+nano kuku.sh
+./kuku.sh 
+nano kuku.sh
+./kuku.sh 
+nano kuku.sh
+./kuku.sh 
+nano kuku.sh
+./kuku.sh 
+nano kuku.sh
+./kuku.sh 
+nano kuku.sh
+./kuku.sh 
+cp kuku.sh kotaenohyou.sh
+nano kotaenohyou.sh 
+chmod +x kotaenohyou.sh 
+./kotaenohyou.sh 
+nano kotaenohyou.sh 
+./kotaenohyou.sh 
+nano kotaenohyou.sh 
+./kotaenohyou.sh 
+nano kotaenohyou.sh 
+./kotaenohyou.sh 
+nano kotaenohyou.sh 
+./kotaenohyou.sh 
+nano kotaenohyou.sh 
+./kotaenohyou.sh 
+nano kotaenohyou.sh 
+./kotaenohyou.sh 
+nano kotaenohyou.sh 
+./kotaenohyou.sh 
+nano kotaenohyou.sh 
+./kotaenohyou.sh 
+nano kotaenohyou.sh 
+./kotaenohyou.sh 
+nano kotaenohyou.sh 
+touch katae.sh
+chmod +x kotae.sh
+chmod +x katae.sh
+nano katae.sh 
+./katae.sh 
+nano katae.sh 
+./katae.sh 
+less katae.sh 
+nano katae.sh 
+nano kotaenohyou.sh 
+./kotaenohyou.sh 
+nano kotaenohyou.sh 
+./kotaenohyou.sh 
+nano kotaenohyou.sh 
+./kotaenohyou.sh 
+nano kotaenohyou.sh 
+./kotaenohyou.sh 
+ls
+nano kotaenohyou.sh 
+./kotaenohyou.sh 
+ls
+nano kotaenohyou.sh 
+more captions.sub 
+nano captions.sub 
+rm captions.sub 
+ls
+cd falsestatistics/
+ls
+cd sbm/
+ls
+cat test | ./max
+less test
+./max test
+cat test | ./max
+cd ..
+./aup.sh 
+tweet.sh 今実際にこれ起きていて、それなりに大規模なスクリプトを某GPTがさらっと書いちゃうから「ぼくのかんがえたさいきょうの処理」をニヤニヤしながら組み合わせる楽しみを感じられない
+cd
+cd falsestatistics/
+tree
+nano opttest
+cdmod +x opttest 
+nano opttest
+./opttest a ab
+chmod +x opttest 
+./opttest a b c d e f g h 
+./opttest a b c d e f g h I
+./opttest a b c d e f g h I J
+touch mycsv
+chmod +x mycsv 
+nano mycsv 
+la
+cd tools/
+ls
+nano mandm 
+./tool/mandm
+./tools/mandm
+ls
+./mandm 
+ls
+cd ..
+ls
+tree
+cd -
+nano m
+nano ma
+ls
+nano mandm 
+./mandm 
+nano test
+./mandm 
+nano mandm 
+ls
+nano rand10000
+chmod +x rand10000 
+./rand10000 
+nano rand10000
+./rand10000 
+nano rand10000
+./rand10000 
+nano rand10000
+./rand10000 
+nano rand10000
+./rand10000 
+nano rand10000
+./rand10000 
+nano mandm 
+./rand10000 
+nano mandm 
+nano rand10000
+./rand10000 
+./mandm
+cp rand10000 rand30000
+nano rand3
+nano rand30000 
+./rand30000 
+./mandm 2> log
+less log
+./rand10000 
+./mandm 2> log
+ls
+less test
+nano mandm 
+./mandm 2> log
+cp mandm min
+mv min ../
+ls
+cd ..
+ls
+less min
+mkdir sbm
+mv min sbm
+ls
+cd sbm
+cp min max
+ls
+chmod +x min
+chmod +x max
+ls
+nano max
+cd ..
+ls
+cd -
+ls
+./aup.sh 
+ls
+nano inputtest
+chmod +x inputtest 
+./inputtest konnniha
+ls
+aup.sh > ./inputtest 
+"aup.sh" > ./inputtest 
+tree
+cd tools/
+ls
+cp test inptest
+mv inptest ../
+cd ..
+ls
+mv inptest test
+test > ./inputtest 
+nano inputtest 
+nano opttest 
+nano inputtest 
+test > ./inputtest 
+./inputtest < test
+less test 
+nano inputtest 
+./inputtest < test
+nano inputtest 
+./inputtest < test
+nano inputtest 
+./inputtest < test
+nano inputtest 
+nano inputtest ls
+ls
+less inputtest 
+less opttest 
+./opttest < file
+                                                                                                                                                                                                      ls
+cd falsestatistics/
+ls
+cd sbm/
+ls
+./max < test
+nano max 
+traceroute 8.8.8.8
+ls
+cd falsestatistics/
+cd sbm/
+ls
+tweet.sh MacBookくんもUSB-Aが二発ついてるから環境さえ構築すればものグラで使えるんだよな
+twtl.sh
+touch and.man
+man and
+pwd
+path=pwd 
+path=pwd rcho $PATH
+echo $PATH
+PATH=pwd:$PATH 
+echo $PATH
+PATH=~/falsestatistics/sbm/:$PATH 
+man and
+tweet.sh いきてるか
+ls
+less test
+less test2.txt 
+less toyama.csv 
+cd
+cd ogawabox/
+./gutentag.sh 
+cd
+mkdir bettertype
+cd bettertype/
+git init
+ls
+l
+la
+touch tate.sh
+chmod +x tate
+chmod +x tate.sh 
+git status
+git add =a
+git add -A
+git status
+git commit -m "hello"
+git status
+git branch -m ain
+git branch -m main
+git status
+git remote add origin main
+git status
+git remote add origin https://ogawa3427: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@github.com/ogawa3427/betterwriting.git
+git remote
+git remote rm
+git remote rm origin
+git remote add origin https://ogawa3427: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@github.com/ogawa3427/betterwriting.git
+git remote
+git status
+git push -u origin main
+cd
+cd ogawabox/
+cd meta/
+cd
+cd bettertype/
+cp ~/ogawabox/meta/aup.sh .
+ls
+touch test
+nano test
+./tate
+./tate.sh 
+./tate.sh test
+nano test
+./aup.sh 
+nano aup.sh 
+rm aup.sh 
+cd ..
+ls
+cd falsestatistics/
+cd 
+cd bettertype/
+cp ~/falsestatistics/aup.sh .
+./aup.sh 
+nano aup.sh 
+./aup.sh 
+git add -A
+git commit -m "wakaran"
+git push
+./tate.sh 
+./tate.sh test
+less test
+ls
+nano test
+./tate.sh test
+cd
+cd /usr/share/man
+ls
+man fi
+echo $MANPATH
+man ls
+env 
+env | grep manpath
+sudo apt install -y manpages-ja manpages-ja-dev
+ls
+cd ja
+ls
+cd ..
+tree
+ls
+cd
+cd falsestatistics/
+./aup.sh 
+cd
+cd bettertype/
+./aup.sh 
+git add -A
+git commit -m "dou?2
+git commit -m "dou?2"
+git push
+traceroute
+traceroute 8.8.8.8
+traceroute 8.8.8.8 |  sed 's/ \n/g'
+traceroute 8.8.8.8 |  sed -E 's/ \n/g'
+traceroute 8.8.8.8 |  sed -E 's/ /\n/g'
+traceroute 8.8.8.8 |  sed -E 's/ /\n/g' grep [0-9]{3}/.
+traceroute 8.8.8.8 |  sed -E 's/ /\n/g' | grep [0-9]{3}/.
+traceroute 8.8.8.8 |  sed -E 's/ /\n/g' | grep [0-9]{3}
+traceroute 8.8.8.8 |  sed -E 's/ /\n/g' | grep -E [0-9]
+traceroute 8.8.8.8 |  sed -E 's/ /\n/g' | grep -E [0-9]{3}
+traceroute 8.8.8.8
+cd falsestatistics/
+cd sbm/
+ls
+./max test
+./max < test
+cat test | ./max
+cat test | ./max 2> log
+cat test | ./max 2>> log
+touch log
+cat test | ./max 2>> log
+nano max
+cat test | ./max 2>> log
+cat test | ./max 2> log
+nano max
+cat test | ./max 2> log
+nano max
+cat test | ./max 2> log
+cat test | ./max
+cat test | ./max 2> log
+ls
+chmod +x tester.sh
+touch tester.sh
+chmod +x tester.sh
+nano tester.sh 
+./tester.sh 
+nano tester.sh 
+./tester.sh 
+ls
+cd ..
+ls
+cd ..
+ls
+cd falsestatistics/
+cd sbm/
+ls
+nano rander.sh
+chmod +x rander.sh 
+./rander.sh 
+cat test
+nano rander.sh
+./rander.sh 
+nano rander.sh
+./rander.sh 
+nano rander.sh
+./rander.sh 
+nano rander.sh
+./rander.sh 
+cat test
+nano rander.sh
+echo $RANDOM
+nano rander.sh
+./rander.sh 
+cat test
+nano rander.sh
+./rander.sh 
+cat test
+histpry
+history
+./max
+ls
+./tester.sh 
+nano tester.sh 
+./tester.sh 
+nano test
+./tester.sh 
+cat test | sed 's/^/^-/g
+cat test | sed 's/^/-/g
+cat test | sed 's/^/-/g'
+cat test | sed 's/^/-/g' > mitest
+nano tester.sh 
+./tester.sh 
+nano mitest
+./tester.sh 
+cat test | sed 's/^/-/g' | tr -d "-0" 
+cat test | sed 's/^/-/g' | tr -d"-0" 
+cat test | sed 's/^/-/g' | sed 's/-0/-100/g'
+cat test | sed 's/^/-/g' | sed 's/-0/-100/g' >> mitest
+cat test | sed 's/^/-/g' | sed 's/-0/-100/g' > mitest
+cat test | sed 's/^/-/g' | tr -d "-0" 
+./tester.sh 
+cat test | sed 's/^/-/g' | sed 's/-0/-100/g' | sed 's/--9307//g' > mitest
+./tester.sh 
+nano test
+cat test | sed 's/^/-/g' | sed 's/-0/-100/g' | sed 's/--9307//g' > mitest
+./tester.sh 
+./max ko ko
+cd ..
+ls
+./aup.sh 
+ls
+cd sbm/
+ls
+nano max 
+ls
+cd falsestatistics/
+cd sbm/
+ls
+nano max
+date
+twtl.sh
+l
+cd temp
+ls
+man rm
+man sl
+tree
+ls
+cd falsestatistics/
+tree
+cd sbm/
+tree
+cd ..
+ld
+ls
+./aup.sh 
+ls
+la
+echo "hello"
+shellls
+ls
+cd falsestatistics/sbm/
+ls
+./tester.sh 
+nano tester.sh 
+nano max
+la
+nano max
+./max < test
+less test
+wc -l test
+./tester.sh 
+echo $?
+cd
+cd falsestatistics/
+mkdir pakuri
+ls
+cd pakuri/
+touch regi
+chmod regi
+chmod +x regi
+nano regi 
+history | tail -n 1
+history | tail -n 2
+history | tail -n 2 | head -n 1
+history
+history | tail -n 2 | head -n 1
+nano regi 
+history | tail -n l
+history | tail -n 1
+history
+history | tail -n 1
+nano regi 
+./regi 
+nano regi 
+./regi 
+nano regi 
+./regi 
+nano regi 
+less his
+nano regi 
+date
+ls
+touch readme.txt
+nano readme.txt 
+cd ..
+./aup.sh 
+cd falsestatistics/
+cd sbm/
+ls
+man ls
+man mkdir
+history
+history | sed 's/ [a-z]//g'
+history | sed 's/ [a-z]*//g'
+history | sed 's/ .*$//g'
+history | sed 's/ tree.*$//g'
+history | wc -1
+history | wc -l
+history
+history | wc -l
+cd falsestatistics/
+./aup.sh 
+git status
+git checkout master
+git list
+git bransh list
+git branch list
+git branch
+git checkout main
+git pull
+ls
+rm ＥＢＰＭ_エビデンスに基づく政策立案_期末2023年第2学期（提出用紙）.pptx 
+rm '~$ＥＢＰＭ_エビデンスに基づく政策立案_期末2023年第2学期（提出用紙）.pptx 
+
+ls
+./aup.sh 
+ls
+./aup.sh 
+ls
+rm opttest 
+rm mycsv 
+rm inputtest 
+ls
+./aup.sh 
+ls
+cd pakuri/
+ls
+history
+history > his.txt
+less his.txt 
+wc -l his.txt 
+cat his.txt | grep -c '^'
+tail -n 1 his.txt 
+history > his.txt
+tail -n 1 his.txt 
+date
+fortune
+history > his.txt
+tail -n 1 his.txt 
+nano regi 
+date
+./regi 
+nano regi 
+less hosi
+less hosi.txt 
+nano re
+nano regi 
+date
+./regi 
+less hosi.txt 
+nano regi 
+date
+./regi 
+less hosi.txt 
+more hosi.txt 
+hisory
+history
+more his.txt 
+less his.txt 
+history > his.txt
+less his.txt 
+nano regi 
+less ~/.bash_history | 
+nano regi 
+date
+./regi 
+more hosi.txt 
+nano regi 
+less ~/.bash_history 
+less ~/.bash_history | tail -n 1
+less ~/.bash_history | wc -l
+less ~/.bash_history | tail -n 1
+date
+less ~/.bash_history | tail -n 1
+nano regi 
+./regi 
+nano regi 
+./regi 
+nano regi 
+less his.txt 
+nano regi 
+./regi 
+nano regi 
+./regi 
+date
+./regi 
+cat ~/.bash_history 
+restart
+exit
