@@ -1,15 +1,83 @@
-#!/bin/bash
+#!/bin/sh
+
+error() {
+  echo "[error]"
+  exit 1
+}
+
+maxpipe() {
+  echo "maxpipe"
+  exit 0
+}
+
+minpipe() {
+  echo "minpipe"
+  exit 0
+}
+
+maxfile() {
+  echo "maxfile"
+  exit 0
+}
+
+minfile() {
+  echo "minfile"
+  exit 0
+}
+
+helping() {
+  echo "[help]"
+  exit 0
+}
+
+#123X
+if [ -n "$(echo -n "$4$5$6$7$8")" ]; then
+  error
+fi
+
+#1XXX
+case "$1" in
+  -h|--help)
+    if [ -n "$(echo -n "$2$3$4$5$6$7$8")" ]; then
+      error
+    else
+      helping
+    fi
+esac
+
+
+#退避flee from escape
+first="$1"
 
 #except1
-waste=$(echo -n "$2$3$4$5$6$7$8")
-#opt_reading
-if [ -n "$waste" ]; then
+waste=$(echo -n "$4$5$6$7$8")
+echo $first
+echo $2
+echo $waste
+
+
+
+exit
+
+#interpret_option&set_status
+if [ "$first" == "-h" ]; then
+  status="help"
+elif [ "$first" == "--help" ]; then
+  status="help"
+elif [ -n "$waste" ]; then
   status="error"
-elif [ -n "$1" ]; then
+elif [ -n "$first" ]; then
   status='file'
 else
   status='pipe'
 fi
+
+
+
+
+
+
+
 
 #status-Error
 if [ "$status" == "error" ]; then
@@ -41,7 +109,7 @@ if [ "$status" == "file" ]; then
 
     ((num++))
 
-  done < "$1"
+  done < "$first"
   echo "$max" >&1
 fi
 
