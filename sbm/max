@@ -43,7 +43,33 @@ case "$1" in
     else
       helping
     fi
+    ;;
+  --min|-i)
+    if [ -n "$(echo -n "$2$3$4$5$6$7$8")" ]; then
+      error
+    else
+      minpipe
+    fi
 esac
+
+#12XX
+case "$1" in
+  -i|--min)
+    file="$2"
+    minfile
+    ;;
+  -e|--escape)
+    file="$2"
+    maxfile
+    ;;
+  -ie|-ei)
+    file="$2"
+    minfile
+    ;;
+ 
+esac
+
+#123X
 
 
 #退避flee from escape
