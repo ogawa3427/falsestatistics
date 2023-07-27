@@ -1,0 +1,14 @@
+#!/bin/bash
+
+echo (:p ! :q) ! (p ! q)file
+./max mitest
+
+echo pppipe
+cat mitest | ./max
+
+echo redirect
+./max < mitest
+
+
+
+exit
