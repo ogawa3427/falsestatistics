@@ -111,67 +111,64 @@ minfile() {
 }
 
 helping() {
-  cat << EOF
+
+cat << EOF
 NAME
-  max - Calculates and outputs maximum value.
-  max - 最大値を計算し、出力します。
+    max - Calculates and outputs maximum value.
 
 SYNOPSIS
-  max [OPTION] [FILE]
+    max [OPTION] [FILE]
 
 DESCRIPTION
-  Using option "-i, --min", you can get minimum value.
-  オプション "-iもしくは--min" で最小値を出力します。
-  These commands provide you the maximum/minimum value using integer style value separated by changing line.
-  このコマンドは改行で区切られた整数の値の列から最大/最小値を出力します。
-  For persons who think "To be working, or not to be, that is the question." about this command, number of the line processed will be put into the default error output (2>)
-  1000行ごとに処理した行の番号を標準エラー出力します、ちゃんと動いているか心配な方のために。
-  You can use pipe, file input and redirection.
-  パイプ、ファイル名指定、入力リダイレクトを使用できます。
+    Using option "-i, --min", you can get minimum value. 
+    オプション "-iもしくは--min" で最小値を出力します
+    These commands provide you the maximum/minimum value using integer style value separated by changing line.
+    このコマンドは改行で区切られた整数の値の列から最大/最小値を出力します。
+    For parsons, who think "To be working, or not to be, that is the question." about this command, number of the line proccessed will be put into the defailt error output (2>)
+    1000行ごとに処理した行の番号を標準エラー出力します、ちゃんと動いているか心配な方のために。
+    You can use pipe, file input and redirection. 
+    パイプ、ファイル名指定、入力リダイレクトを使用できます。
+    When you do not specify a file without any pipeline or redirection, inputs will be waited for.
+    パイプもリダイレクトもなく、ファイル名を指定しなかった場合は数値入力を待ち続けます
 
 OPTIONS
-  -i/--min  - work as "min"(calculating minimum one)
-              最小値を出力します。
-  -h/--help - shows help page
-              ヘルプページを表示します。
-  (You can also use "--")
-  (-- を使ってエスケープできます)
+    -i/--min - work as "min"(calclating minimum one) 
+    最小値を出力します
+
+    -h/--help - shows helppage 
+    この画面を表示します
+
+    -- - let escape an argument after this
+    以後の引数をオプションとして扱いません
 
 BUGS
-  Strange action when give "-pi" as the option
-  -piというオプションを入れるとおかしい
+    It takes too long time to get output. 
+    出力までが遅すぎる
+    => You might use Rust lauguage, C language etc... 
+    最近話題のRustとかCでたぶん同じことができると思います
 
-  It takes too long time to get output.
-  出力までが遅すぎる。
-  =>You might use Rust language, C language etc...
-  =>最近話題のRustとかCでたぶん同じことができると思います。
-  
-  There are no advantage to write in Shell language.
-  シェルで書く必要があると思えない
-  =>If you realize so, should it be the time to learn how to use other tool such as Julia , MATLAB or sth like that? Please do not be so angry. I find Shell scripts as easily fixable, executable and remarkable tools.
-  だったら別のなんか速い言語でやったら良いと思います
-  そんなに興奮しないでください
-  Unix系OSの環境で手軽に実行・改変できるようなソフトウェアを作る方法としてシェルスクリプトはとても価値があると思っています。
-  手軽さのために犠牲にしているものがあるかもしれません。
-  もしこのソフトウェアのパフォーマンスについて不満があるならば、それは重点を置く場所がわたしとあなたで異なっているということです。
+    There are no advantage to write in Shell language. 
+    シェルで書く必要があると思えない
+    => If you realize so, should it be the time to learn how to use other tool such as Julia , MATLAB or sth like that? だったら別のなんか速い言語でやったら良いと思います。すぐ書けて動いて直せるシェルスクリプトもいいと思いますよ。
 
 AUTHOR
-  Written by REN Shimizu
-  Grammarly support by ChatGPT
+    Written by REN Shimizu. Grramarly sopport by ChatGPT.
 
 REPORTING BUGS
-  Stu-mail in KU or twitter @stspecedjpstuku
+    Stu-mail in KU or twitter @stspecedjpstuku
 
 COPYRIGHT
-  You can change and use this script for any ways.
-  There is no warranty, extent limitation by the law.
-  このスクリプトはあなたが任意の方法で変更し使用することができます。
-  保証はありません、法律による制約範囲内で。
+    You can change and use this script for any ways. There is no warranty, extent limitation by the law.
+    法律による定めのない限り保証なく、自由にこのコマンドを使用することができます。
 
 SEE ALSO
-  https://jp.mathworks.com/products/matlab.html
-  https://julialang.org/
+    https://jp.mathworks.com/products/matlab.html
+    https://julialang.org/
+    https://github.com/ogawa3427/falsestatistics/blob/main/sbm/Shimizu_max.md
+    https://note.com/ogawa3427/n/n1e9462786009
+
 EOF
+
   exit 0
 }
 
@@ -204,6 +201,10 @@ fi
 
 #countif=1
 if [ $# -eq 1 ]; then
+  case "$1" in
+    -h|--help)
+      helping
+  esac
   if [ "$1" = "--" ]; then
     error #010
   else
@@ -217,7 +218,7 @@ if [ $# -eq 1 ]; then
 fi
 
 #countif=0
-maxpipe
+maxpipe #000
 
 #最終手段
 error
