@@ -40,9 +40,7 @@ maxpipe() {
     if [ "$line" -gt "$max" ]; then
       max="$line"
     fi
-    if [ "$num" -ge 1000 ] && [ $((num % 1000)) = 0 ]; then
-      echo "line $num" >&2
-    fi
+    if [ $((num % 1000)) = 0 ]; then echo "line $num" >&2; fi
     num=$((num + 1))
   done
   echo "$max"
@@ -61,9 +59,7 @@ minpipe() {
     if [ "$line" -lt "$min" ]; then
       min="$line"
     fi
-    if [ "$num" -ge 1000 ] && [ $((num % 1000)) = 0 ]; then
-      echo "line $num" >&2
-    fi
+    if [ $((num % 1000)) = 0 ]; then echo "line $num" >&2; fi
     num=$((num + 1))
   done
   echo "$min"
@@ -81,9 +77,7 @@ maxfile() {
     if [ "$line" -gt "$max" ]; then
       max="$line"
     fi
-    if [ $((num % 1000)) -eq 0 ]; then
-      echo "line $num" >&2
-    fi
+    if [ $((num % 1000)) = 0 ]; then echo "line $num" >&2; fi
     num=$((num + 1))
   done < "$1"
   echo "$max"
@@ -101,9 +95,7 @@ minfile() {
     if [ "$line" -lt "$min" ]; then
       min="$line"
     fi
-    if [ "$num" -ge 1000 ] && [ $((num % 1000)) = 0 ]; then
-      echo "line $num" >&2
-    fi
+    if [ $((num % 1000)) = 0 ]; then echo "line $num" >&2; fi
     num=$((num + 1))
   done < "$1"
   echo "$min"
