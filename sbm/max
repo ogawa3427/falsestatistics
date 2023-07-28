@@ -1,4 +1,16 @@
 #!/bin/sh
+##関数定義で可読性向上&ファイルサイズ削減セクション
+screen() {
+  opt="--min -i --help -h"
+  for word in $opt; do
+    sld=$(echo "$sld" | sed "s/$word//g")
+  done
+  if [ -n $(echo "$sld") ];then
+    error
+  else
+    :
+  fi
+}
 
 error() {
   echo "max: invalid input" >&2
@@ -152,86 +164,34 @@ EOF
   exit 0
 }
 
+#引数の数で切るのが好き
+
+
+##安全装置セクション
+#$3まででATフィールド
+if [ -n "$(echo $4$5$6$7$8$9)" ];then
+  error
+fi
 
 #不正な引数が入力されたら弾く
-#香川式
-filnum=0
-optnum=0
-dasnum=0
-
-if [ -n "$1" ] && [ "$(echo "$1" | cut -c1)" != "-" ]; then
-  filnum=$(expr $filnum + 1)
-fi
-if [ -n "$2" ] && [ "$(echo "$2" | cut -c1)" != "-" ]; then
-  filnum=$(expr $filnum + 1)
-fi
-if [ -n "$3" ] && [ "$(echo "$3" | cut -c1)" != "-" ]; then
-  filnum=$(expr $filnum + 1)
-fi
-
-case "$1" in
-  -[a-z]*)
-    optnum=$(expr $optnum + 1)
-    ;;
-  *)
-    :
-    ;;
-esac
-case "$2" in
-  -[a-z]*)
-    optnum=$(expr $optnum + 1)
-    ;;
-  *)
-    :
-    ;;
-esac
-case "$3" in
-  -[a-z]*)
-    optnum=$(expr $optnum + 1)
-    ;;
-  *)
-    :
-    ;;
-esac
-
-if [ "$(echo "$1" | grep -- "-[a-z]" | wc -l )" = "1" ]; then
-  dasnum=$(expr $dasnum + 1)
-fi
-if [ "$(echo "$2" | grep -- "--" | wc -l )" = "1" ]; then
-  dasnum=$(expr $dasnum + 1)
-fi
-if [ "$(echo "$3" | grep -- "--" | wc -l )" = "1" ]; then
-  dasnum=$(expr $dasnum + 1)
-fi
-echo start
-echo $optnum
-echo $filnum
-echo $dasnum
-echo fin
-
-# はじき
-if [ $optnum -gt 1 ];then
-  error
-fi
-if [ $filnum -gt 1 ];then
-  error
-fi
-if [ $dasnum -gt 1 ];then
-  error
+#--で見逃す範囲&ふるい
+if [ "$2" = "--" ];then
+  sld="$(echo $1)"
+  filename="$(echo $3)"
+  screen
+elif [ "$1" = "--" ];then
+  if [ -n "$3" ];then
+    error
+  fi
+else
+  if [ -n "$3" ];then
+    error
+  fi
+  sld="$(echo $1)"
+  screen
 fi
 
-
-
-#オプション
-che="$1$2$3"
-ched="$(echo "$che" | sed 's/--min//g' | sed 's/-i//g' | sed 's/--help//g' | sed 's/-h//g' | sed 's/--//g' )"
-if [ -n "$ched" ]; then
-  error
-fi
-
-#--
-echo "1"
-
+##場合分けセクション
 # ヘルプ関係＆不正なヘルプ呼出を切る
 case "$1" in
   -h|--help)
