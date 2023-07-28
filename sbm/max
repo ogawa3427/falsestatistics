@@ -1,11 +1,21 @@
 #!/bin/sh
-##関数定義で可読性向上&ファイルサイズ削減セクション
-screen() {
-  opt="--min -i --help -h"
-  for word in $opt; do
-    sld=$(echo "$sld" | sed "s/$word//g")
-  done
-  if [ -n $(echo "$sld") ];then
+###関数定義で可読性向上&ファイルサイズ削減セクション
+##組み込まれエリア
+oscreen() {
+  case "$1" in
+    -i|--min)
+      :
+      ;;
+    *)
+      echo "Undifined option"
+      error
+      ;;
+  esac
+}
+
+fscreen() {
+  if [ ! -f "$1" ]; then
+    echo "Error:max: not a file."
     error
   else
     :
@@ -18,6 +28,7 @@ error() {
   exit 1
 }
 
+##分岐後処理エリア
 maxpipe() {
 #  echo "maxpipe" >&2
 
@@ -61,7 +72,7 @@ minpipe() {
 
 maxfile() {
 #  echo "maxfile" >&2
-
+  fscreen "$1"
   num=0
   while IFS= read -r line; do
     if [ "$num" -eq 0 ]; then
@@ -81,7 +92,7 @@ maxfile() {
 
 minfile() {
 #  echo "minfile"
-
+  fscreen "$1"
   num=0
   while IFS= read -r line; do
     if [ "$num" = 0 ]; then
@@ -164,8 +175,52 @@ EOF
   exit 0
 }
 
-#引数の数で切るのが好き
+###正しいフォームでコマンドが実行されているか＆引数が有効か？
+#countif=3
+if [ $# -ge 4 ]; then
+  echo "Too many arguments."
+  error
+fi
+if [ $# -eq 3 ]; then
+  if [ "$2" = "--" ]; then
+    oscreen "$1"
+    minfile "$3" #111
+  else
+    error
+  fi
+fi
 
+#countif=2
+if [ $# -eq 2 ]; then
+  if [ "$2" = "--" ];then
+    error #110
+  elif [ "$1" = "--" ]; then
+    maxfile "$2" #011
+  else
+    oscreen "$1"
+    minfile "$2" #101
+  fi
+fi
+
+#countif=1
+if [ $# -eq 1 ]; then
+  if [ "$1" = "--" ]; then
+    error #010
+  else
+    if [ "$(echo "$1" | cut -c1)" = "-" ]; then
+      oscreen "$1"
+      maxpipe #100
+    else
+      maxfile "$1" #001
+    fi
+  fi
+fi
+
+#countif=0
+maxpipe
+
+
+exit
 
 ##安全装置セクション
 #$3まででATフィールド
