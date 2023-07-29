@@ -31,12 +31,8 @@ error() {
 maxpipe() {
   num=0
   while IFS= read -r line; do
-    if [ "$num" = 0 ]; then
-      max="$line"
-    fi
-    if [ "$line" -gt "$max" ]; then
-      max="$line"
-    fi
+    if [ "$num" = 0 ]; then max="$line"; fi
+    if [ "$line" -gt "$max" ]; then max="$line"; fi
     if [ $((num % 1000)) = 0 ]; then echo "line $num" >&2; fi
     num=$((num + 1))
   done
@@ -45,16 +41,10 @@ maxpipe() {
 }
 
 minpipe() {
-#  echo "minpipe" >&2
-
   num=0
   while IFS= read -r line; do
-    if [ "$num" = 0 ]; then
-      min="$line"
-    fi
-    if [ "$line" -lt "$min" ]; then
-      min="$line"
-    fi
+    if [ "$num" = 0 ]; then min="$line" ;fi
+    if [ "$line" -lt "$min" ]; then min="$line"; fi
     if [ $((num % 1000)) = 0 ]; then echo "line $num" >&2; fi
     num=$((num + 1))
   done
@@ -63,43 +53,32 @@ minpipe() {
 }
 
 maxfile() {
-#  echo "maxfile" >&2
   fscreen "$1"
   num=0
   while IFS= read -r line; do
-    if [ "$num" -eq 0 ]; then
-      max="$line"
-    fi
-    if [ "$line" -gt "$max" ]; then
-      max="$line"
-    fi
+    if [ "$num" -eq 0 ]; then max="$line" ;fi
+    if [ "$line" -gt "$max" ]; then max="$line"; fi
     if [ $((num % 1000)) = 0 ]; then echo "line $num" >&2; fi
     num=$((num + 1))
   done < "$1"
-  echo "$max"
+  echo "$max" >&1
   exit 0
 }
 
 minfile() {
-#  echo "minfile"
   fscreen "$1"
   num=0
   while IFS= read -r line; do
-    if [ "$num" = 0 ]; then
-      min="$line"
-    fi
-    if [ "$line" -lt "$min" ]; then
-      min="$line"
-    fi
+    if [ "$num" = 0 ]; then min="$line";     fi
+    if [ "$line" -lt "$min" ]; then min="$line"; fi
     if [ $((num % 1000)) = 0 ]; then echo "line $num" >&2; fi
     num=$((num + 1))
   done < "$1"
-  echo "$min"
+  echo "$min" >&1
   exit 0
 }
 
 helping() {
-
 cat << EOF >&2
 NAME
     max - Calculates and outputs maximum value.
@@ -137,7 +116,8 @@ BUGS
 
     There are no advantage to write in Shell language. 
     シェルで書く必要があると思えない
-    => If you realize so, should it be the time to learn how to use other tool such as Julia , MATLAB or sth like that? だったら別のなんか速い言語でやったら良いと思います。すぐ書けて動いて直せるシェルスクリプトもいいと思いますよ。
+    => If you realize so, should it be the time to learn how to use other tool such as Julia , MATLAB or sth like that? 
+    だったら別のなんか速い言語でやったら良いと思います。すぐ書けて動いて直せるシェルスクリプトもいいと思いますよ。
 
 AUTHOR
     Written by REN Shimizu. Grramarly sopport by ChatGPT.
@@ -160,7 +140,7 @@ EOF
   exit 0
 }
 
-###正しいフォームでコマンドが実行されているか＆引数が有効か？
+##正しいフォームでコマンドが実行されているか＆引数が有効か？
 #countif=3
 if [ $# -ge 4 ]; then
   echo "Too many arguments." >&2
