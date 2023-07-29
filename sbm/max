@@ -6,7 +6,7 @@ oscreen() {
       :
       ;;
     *)
-      echo "Undifined option"
+      echo "Undifined option." >&2
       error
       ;;
   esac
@@ -14,7 +14,7 @@ oscreen() {
 
 fscreen() {
   if [ ! -f "$1" ]; then
-    echo "Error:max: not a file."
+    echo "not a file." >&2
     error
   else
     :
@@ -29,8 +29,6 @@ error() {
 
 ##分岐後処理エリア
 maxpipe() {
-#  echo "maxpipe" >&2
-
   num=0
   while IFS= read -r line; do
     if [ "$num" = 0 ]; then
@@ -45,7 +43,6 @@ maxpipe() {
   echo "$max"
   exit 0
 }
-
 
 minpipe() {
 #  echo "minpipe" >&2
@@ -103,7 +100,7 @@ minfile() {
 
 helping() {
 
-cat << EOF
+cat << EOF >&2
 NAME
     max - Calculates and outputs maximum value.
 
@@ -163,88 +160,10 @@ EOF
   exit 0
 }
 
-<<<<<<< HEAD
 ###正しいフォームでコマンドが実行されているか＆引数が有効か？
 #countif=3
 if [ $# -ge 4 ]; then
-  echo "Too many arguments."
-=======
-
-#不正な引数が入力されたら弾く
-#我々はどこから来てどこへ行くのか
-#香川式
-filnum=0
-optnum=0
-dasnum=0
-
-if [ -n "$1" ] && [ "$(echo "$1" | cut -c1)" != "-" ]; then
-  filnum=$(expr $filnum + 1)
-fi
-if [ -n "$2" ] && [ "$(echo "$2" | cut -c1)" != "-" ]; then
-  filnum=$(expr $filnum + 1)
-fi
-if [ -n "$3" ] && [ "$(echo "$3" | cut -c1)" != "-" ]; then
-  filnum=$(expr $filnum + 1)
-fi
-
-case "$1" in
-  -[a-z]*)
-    optnum=$(expr $optnum + 1)
-    ;;
-  *)
-    :
-    ;;
-esac
-case "$2" in
-  -[a-z]*)
-    optnum=$(expr $optnum + 1)
-    ;;
-  *)
-    :
-    ;;
-esac
-case "$3" in
-  -[a-z]*)
-    optnum=$(expr $optnum + 1)
-    ;;
-  *)
-    :
-    ;;
-esac
-
-if [ "$(echo "$1" | grep -- "-[a-z]" | wc -l )" = "1" ]; then
-  dasnum=$(expr $dasnum + 1)
-fi
-if [ "$(echo "$2" | grep -- "--" | wc -l )" = "1" ]; then
-  dasnum=$(expr $dasnum + 1)
-fi
-if [ "$(echo "$3" | grep -- "--" | wc -l )" = "1" ]; then
-  dasnum=$(expr $dasnum + 1)
-fi
-echo start
-echo $optnum
-echo $filnum
-echo $dasnum
-echo fin
-
-# はじき
-if [ $optnum -gt 1 ];then
-  error
-fi
-if [ $filnum -gt 1 ];then
-  error
-fi
-if [ $dasnum -gt 1 ];then
-  error
-fi
-
-
-
-#オプション
-che="$1$2$3"
-ched="$(echo "$che" | sed 's/--min//g' | sed 's/-i//g' | sed 's/--help//g' | sed 's/-h//g' | sed 's/--//g' )"
-if [ -n "$ched" ]; then
->>>>>>> 40e0f7e66d4274c5e06e0952d897c220fdf4109e
+  echo "Too many arguments." >&2
   error
 fi
 if [ $# -eq 3 ]; then
