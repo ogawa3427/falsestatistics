@@ -130,8 +130,10 @@ COPYRIGHT
     法律による定めのない限り保証なく、自由にこのコマンドを使用することができます。
 
 SEE ALSO
+  more useful, reliable choices
     https://jp.mathworks.com/products/matlab.html
     https://julialang.org/
+  moreinfo
     https://github.com/ogawa3427/falsestatistics/blob/main/sbm/Shimizu_max.md
     https://note.com/ogawa3427/n/n1e9462786009
 
@@ -141,11 +143,12 @@ EOF
 }
 
 ##正しいフォームでコマンドが実行されているか＆引数が有効か？
-#countif=3
 if [ $# -ge 4 ]; then
   echo "Too many arguments." >&2
   error
 fi
+
+#countif=3
 if [ $# -eq 3 ]; then
   if [ "$2" = "--" ]; then
     oscreen "$1"

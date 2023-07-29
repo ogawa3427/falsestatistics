@@ -18,14 +18,18 @@ These commands provide you the maximum/minimum value using integer style value s
 For persons who think "To be working, or not to be, that is the question." about this command, number of the line processed will be put into the default error output (2>)  
 1000行ごとに処理した行の番号を標準エラー出力します、ちゃんと動いているか心配な方のために。  
 
-You can use pipe, file input and redirection.
-パイプ、ファイル名指定、入力リダイレクトを使用できます。
+You can use pipe, file input and redirection.  
+パイプ、ファイル名指定、入力リダイレクトを使用できます。 
+
+When you do not specify a file without any pipeline or redirection, inputs will be waited for. Please stop by ^c.  
+パイプもリダイレクトもなく、ファイル名を指定しなかった場合は数値入力を待ち続けます。^Cで止めてあげてください。  
+
 
 ## OPTIONS
 
 - `-i/--min` - work as "min"(calculating minimum one). 最小値を出力します。
 - `-h/--help` - shows help page. ヘルプページを表示します。
-- `--` - Use to escape. エスケープするために使用します。
+- `--` - Use to escape. これ以後の引数をオプションとして解釈しません。  
 
 ## BUGS
 
@@ -58,6 +62,15 @@ You can change and use this script for any ways. There is no warranty, extent li
 
 ## SEE ALSO
 
+#### the more useful, reliable choices. 
+
 [https://jp.mathworks.com/products/matlab.html](https://jp.mathworks.com/products/matlab.html)
 
 [https://julialang.org/](https://julialang.org/)
+
+#### more info  
+
+[https://github.com/ogawa3427/falsestatistics/blob/main/sbm/Shimizu_max.md](https://github.com/ogawa3427/falsestatistics/blob/main/sbm/Shimizu_max.md
+)
+
+[https://note.com/ogawa3427/n/n1e9462786009](https://note.com/ogawa3427/n/n1e9462786009)
