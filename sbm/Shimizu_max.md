@@ -49,7 +49,7 @@ Unix系OSの環境で手軽に実行・改変できるようなソフトウェ�
 ## AUTHOR
 
 Written by REN Shimizu  
-Grammarly support by ChatGPT  
+Grammar support by ChatGPT  
 
 ## REPORTING BUGS
 
