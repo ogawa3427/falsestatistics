@@ -1,6 +1,0 @@
-#!/bin/bash
-
-for i in {1..7}; do
-	touch "2355030479mp$i"
-done
-exit
