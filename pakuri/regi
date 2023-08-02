@@ -1,27 +1,20 @@
 #!/bin/bash
-
-function mysed() {
-file="$1"
-length=${#file}
-for (( i=0; i<$length; i++ )); do
-  case ${file:$i:1} in
-    "年")
-        echo -n - | sed 's/-/-/g'
-        ;;
-    "月")
-        echo -n - | sed 's/-/-/g'
-        ;;
-    "日")
-        ;;
-    *)
-        echo -n ${file:$i:1}
-        ;;
-  esac
-done
-echo
+function getstarted() {
+	if [ -n "$(cat ~/.bashrc | grep 'alias savehistory')" ];then
+		echo aruyo >&2
+	else
+		echo "alias savehistory='history -a'" >> ~/.bashrc
+	fi
 }
 
+function mysed() {
+	sed -E -e 's/([0-9]{4})年([0-9]{1,2})月([0-9]{1,2})日/\1-\2-\3/g'
+}
 
+mysed "$1"
+
+
+ls | sed 's/ /\n/g' | grep -E "[0-9]{4}年[0-9]{1,2}月[0-9]{1,2}日" > pakutmp.txt
 
 
 exit
