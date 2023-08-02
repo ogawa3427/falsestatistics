@@ -77,4 +77,5 @@ echo "cat mitest | ./max --min"
 cat mitest | ./max --min
 echo ""
 
+
 exit
