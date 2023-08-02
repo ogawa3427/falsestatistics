@@ -177,7 +177,7 @@ if [ $# -eq 1 ]; then
       helping
   esac
   if [ "$1" = "--" ]; then
-    error #010
+    maxfile #010
   else
     if [ "$(echo "$1" | cut -c1)" = "-" ]; then
       oscreen "$1"
