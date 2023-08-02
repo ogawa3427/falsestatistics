@@ -1,33 +1,32 @@
 #!/bin/bash
-function getstarted() {
-	if [ -n "$(cat ~/.bashrc | grep 'alias savehistory')" ];then
-		echo aruyo >&2
-	else
-		echo "alias savehistory='history -a'" >> ~/.bashrc
-	fi
-}
+if [ "$1" = "-h" ]; then
+	echo "This script adds a command to .bashrc"
+	echo "To get more infomation, please check the source"
+elif [ "$1" = "--help" ]; then
+	echo "This script adds a command to .bashrc"
+	echo "To get more infomation, please check the source"
+fi
 
-function mysed() {
-	sed -E -e 's/([0-9]{4})年([0-9]{1,2})月([0-9]{1,2})日/\1-\2-\3/g'
-}
-
-mysed "$1"
-
-
-ls | sed 's/ /\n/g' | grep -E "[0-9]{4}年[0-9]{1,2}月[0-9]{1,2}日" > pakutmp.txt
-
-
-exit
-
-#init
+#getstarted
 if [ -n "$(cat ~/.bashrc | grep 'alias savehistory')" ];then
-	echo aruyo >&2
+	:
 else
 	echo "alias savehistory='history -a'" >> ~/.bashrc
 fi
 
-# 履歴の保存を一時的に無効化
-#set +o history
+#current-get&rename
+ls | sed 's/ /\n/g' | grep -E "^[0-9]{4}年[0-9]{1,2}月[0-9]{1,2}日" > pakutmp.txt
+cat pakutmp.txt
+while IFS= read -r line; do
+	new=$(echo "$line" | sed -E -e 's/([0-9]{4})年([0-9]{1,2})月([0-9]{1,2})日/\1-\2-\3/g')
+	mv "$line" "$new"
+done < pakutmp.txt
+
+rm pakutmp.txt
+exit
+
+
+
 
 
 
