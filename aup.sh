@@ -13,7 +13,7 @@
 #echo $dat
 
 #get title or summary
-echo Title?
+echo Title? >&2
 read tit
 
 #get article
