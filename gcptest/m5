@@ -2,29 +2,25 @@ from m5stack import *
 from m5stack_ui import *
 from uiflow import *
 
-
 screen = M5Screen()
 screen.clean_screen()
 screen.set_screen_bg_color(0xFFFFFF)
 
+#init
+y = 30
+label0 = M5Label('label0', x=130, y=y, color=0x000, font=FONT_MONT_30, parent=None)
 
-
-
-
-
-label0 = M5Label('label0', x=130, y=30, color=0x000, font=FONT_MONT_30, parent=None)
-new_y = 30
 
 for i in range(5):
-
+#show&switch
     label0.set_text('Hello')
     wait(0.5)
     label0.set_text('M5')
     wait(0.5)
     label0.set_text('')
     wait(0.5)
-    new_y += 30
-    label0 = M5Label('', x=130, y=new_y, color=0x000, font=FONT_MONT_30, parent=None)
-
-label0 = M5Label('fin.', x=130, y=new_y, color=0x000, font=FONT_MONT_30, parent=None)
-
+#move
+    y += 30
+    label0.set_pos(130, y)
+#EndOfLoop    
+label0 = M5Label('fin.', x=130, y=y, color=0x000, font=FONT_MONT_30, parent=None)
