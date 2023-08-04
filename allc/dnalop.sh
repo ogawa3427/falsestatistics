@@ -1,5 +1,10 @@
 #!/bin/bash
 
+function gyaku () {
+	echo -n "" > temp
+	exec 3<"$1"
+
+}
 
 function add () {
 
