@@ -25,7 +25,6 @@ function add () {
 	gyaku farg
 	gyaku sarg
 
-#たしざん&0埋め
 	exec 3<"farg"
 	exec 4<"sarg"
 
@@ -37,13 +36,10 @@ function add () {
   		IFS= read -r -n1 -u4 char2
 
   		if [ -z "$char1" ] && [ -z "$char2" ]; then
-    # 両方のファイルが終了した場合、ループを抜ける
     		break
   		fi
 
-  		# もしchar1が空なら0を設定
   		[ -z "$char1" ] && char1="0"
-  		# もしchar2が空なら0を設定
   		[ -z "$char2" ] && char2="0"
 
 		#ワイの答えはこれや！
@@ -52,7 +48,7 @@ function add () {
 
 		#記録&go next
 		if [ $sum -lt 10 ]; then
-			echo -n "$sum" | sed 's/0/z/g' >> rawout
+			echo -n "$sum" >> rawout
 			flag=0
 		elif [ $sum -eq 10 ]; then
 			echo -n "z" >> rawout
@@ -66,21 +62,11 @@ function add () {
 	exec 3<&-
 	exec 4<&-
 
-	echo $flag | sed 's/0//g' >> rawout
+	echo $flag >> rawout
 	gyaku rawout
 
-
-cat rawout | sed 's/z/0/g'
-echo
-
-rm g*
-rm sgf
-rm sgs
-rm so
-rm stemp
-rm ftemp
-rm otemp
-rm rawout
+	cat rawout
+	echo
 }
 
 function sub () {
