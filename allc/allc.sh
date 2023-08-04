@@ -115,6 +115,13 @@ cat so | sed 's/z/0/g'
 echo
 
 rm g*
+rm sgf
+rm sgs
+rm so
+rm stemp
+rm ftemp
+rm otemp
+rm rawout
 }
 
 function sub () {
