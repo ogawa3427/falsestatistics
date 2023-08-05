@@ -51,7 +51,7 @@ function add () {
 			echo -n "$sum" >> rawout
 			flag=0
 		elif [ $sum -eq 10 ]; then
-			echo -n "z" >> rawout
+			echo -n "0" >> rawout
 			flag=1
 		else
 			sum=$((sum - 10))
@@ -62,7 +62,7 @@ function add () {
 	exec 3<&-
 	exec 4<&-
 
-	echo $flag >> rawout
+	echo $flag | sed 's/0//g' >> rawout
 	gyaku rawout
 
 	cat rawout
