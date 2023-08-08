@@ -64,11 +64,11 @@ if ARGV.length == 3
   when "/"
     div
   else
-    puts "error! allc.rb (val) (val) (ope)"
+    puts "error! dnalop.rb (val) (val) (ope)"
   end
 
   File.delete("farg")
   File.delete("sarg")
 else
-  puts "error! allc.rb (val) (val) (ope)"
+  puts "error! dnalop.rb (val) (val) (ope)"
 end
