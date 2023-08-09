@@ -1,2 +1,257 @@
-My view of history has sifted to boaderless one from domestic one. Before this class, there should be a gap bettween subjests, Japnese history and Internatioanal history. I actully had no valid belief to devide contents. The gap was just a unclear stereotype. I refound it as what has happend about there regardless where people were. Futher more, just focusing on domestic materials may ruin the effect of learning history. Two exapmles to make me realize so is to be explaind in this essey.
-The first example is the US's plabaganda against Japan during the asia and pasiphic war. Refering plobaganda such as "Tokio Kid Say" and any publishments, we can learn how American civilians had regerded Japaneses. If we had used only domestic historic materials to study, we should have undertood mistakingly even only the Japanese perspective of the war. However, by integrating international materials, we gain a more comprehensive understanding of the sentiments and perceptions in that situation. For instance, "Tokio Kid Say" and a slogan,"鬼畜米英" portraited their hostile contries asif non-human monsters lived there in negative ways. The posters and words provided racial prejudices of unknowun image of the eneemies in both the US and Japan. If we had not studied with both materials, we should find our plobagandas as a unique heavy fault. This misunderstanding is exactory a today's new prejudice.
+
+人件費の削り方
+機械学習マシーンの責任所在
+人間の独立性
+未知との遭遇・遭遇しないとわからないのか
+
+BMIブレインマシンインターフェース
+
+ユニークな演算機としての脳
+	メモリを外部委託してハードウェアアクセラレーション
+
+嘘
+
+脳情報のObserveに向かっている
+Writing
+意図の拡張
+心理テストの嘘を脳Sencingで破る
+
+１ブロック⇒一段落
+用語について全く知らない人を相手にする
+　横文字・漢語に説明を欠かないように
+　　やらないと何言ってるかわかんない
+現状の風呂敷を広げてラス２で問題整理と解決可能性
+ラス１でまとめ
+はじめにでOverview（Sumるくらい）で登場する話題を示しておく
+→読み進めた先の展開が共有済みでわかりやすい
+Topic Sentencesが全体でつながりを持っている
+
+
+何かをレポートする
+課題＆解決策になると書きやすい
+話題は[制限]で書きやすく、読者を誘導、話の整理
+
+
+
+時間
+
+	利点もいれとくa.単位で
+	4の軽量化
+	focusしてしまえ
+
+
+・情報化社会の闇
+・誰も情報化に取り残されない
+
+新たな社会契約
+第５次産業革命におけるラッダイト運動完全マニュアル
+名字の科学
+インターネットの単純伝送路化
+
+
+
+
+2Qmtz+Bvr
+sotechsha/sp/1254/
+
+いとうじょういち
+
+野村先生
+・右のロゴなに
+→自作なら作って可？ロゴとして大々的にいうつもりはない単なる賑やかし
+
+
+6/21融合として
+	VRどこにおいてどんなものおく(9こ目)
+
+ColabCannnel
+
+（・前回の原因
+・夏企画の金と広報
+２・現状の野村プランとこちらに投げる部分の境界
+
+リアル→街に開かれた大学　どこまでpubulic
+reveal
+5つくらい＋リアル融合スポット3学類分→
+
+pubulic chain
+
+feat tecsuteリアルに漏れる懸念から逃れる
+
+・夏企画のターゲット→受験生/学生/一般 both
+
+お賃金→きりきり工数
+
+実現可能性を抜きにして
+思いもよらなかった組み合わせから突飛なものを発想
+
+・食
+・ロールプレイ→人間じゃないものに
+魚　人間目線じゃない　＊　[]
+・理美容業
+・
+
+いびつに賢いって不便なんだろうなって話
+
+馬鹿な部分を馬鹿でない部分が内省してまた馬鹿になると辛くなる
+
+もう18超えたらハームリダクションの方に行ってもいいだろう
+修行のターンは終わり
+
+
+はじめ時間サマリー質問自分の質問
+＜さて＞
+
+最近困っていることは
+
+led.plot(0, 0)
+    led.unplot(0, 0)
+
+(特急は指定席)
+しらさぎ
+3150
+
+米原のりつぎ
+3220
+
+岐阜羽島
+2440
+
+乗車券(金沢～名古屋)
+4510
+
+
+USAGE
+Register part
+1.$ fav -i (--init) "NAME"
+
+2.
+Exsecute ONE command line
+
+if you are succsessful
+$ fav -a (--add)
+
+else
+do nothing
+
+repeat step2 untill you finish your demand
+
+3. fav -c (--commit)
+
+View list
+1.fav -l (--list)
+
+Execute part
+1A. fav NUM
+(You can chech NAME and NUM by $fav -l)
+
+1B. fav NAME
+
+2.your macro will be executed
+
+
+model packet
+
+starting
+name,0,0,0,pies
+
+
+Aff. cost
+推計どおり2100年には5000万を切る*
+			低位になる理由
+1.data 出生数低位仮定での研究→4000万ちょいになる
+人口減少イベントをどこまで含むか？
+		南海トラフはまだ来ていない
+	
+	Neg. att
+	NWPIの研究あるがそうなる確率は？低ければそうなりにくいということ
+	→推計に確率は持ち込めない
+
+	低位とあるが他の場合は？
+	→(時間切れ)
+		若者から子供を産む理由が消えつつ・女性の経済的自立で結婚控える→低位になりそうであると
+
+		Aff. def
+			Aff. sum
+
+Neg. const
+内閣府dataでは6000万ちょい
+
+1.data 医療の発達で[寿命伸びてる]
+	生産人口の負担が増加して産み控え傾向になるのでは？
+			日本医師の会 日本の医療は高評価
+			平均年齢は圧倒的に高い
+				政策を組み合わせれば切ることはない
+
+2.少子化に政策で対応している欧米の国
+	政策のあったスウェーデンは2を下回ったが日本でうまくいくのか？
+		論点は5000万であって人口増減ではない→5000万を切ることはなかろう
+			{正しいコンギョ
+			他に要因があるだろう}
+				2005state厚労省が言うには
+
+3.data 外国人移民の受け入れが20万→外国人人口の増加
+	Aff. att
+	OECD中で移民が多いのは日本
+	移民増加から治安悪化ということがある→そう思う人いる
+				事実とはいえ飛躍ある
+
+		Neg. def
+			Neg. sum
+
+
+20230620
+gitとgithubの接続の半自動化
+実行可能化の必要性
+../じゃなくて絶対パス
+
+up→機械向けI/Oまでにして人間向けにするのはべつ
+m.verとmiver両方サポートしたい
+
+課題：1つのみ！！
+Discuss, using a specific example, the importance of "image" in how history or culture is understood.
+(Your own views, or those of others)
+***OR***
+How has learning Japanese history and culture in English changed your views of it?
+(Has this class changed your perspective? If so, how? If not, why not?)
+
+How has learning Japanese history and culture in English changed your views of it?
+Choose a theme and discuss your videos.
+(Has the class changed your perspective? If so, how? If not, why not?)
+Dead Line 8/8 23:59
+min = 400w
+acadmic 批評
+based on facts
+With internatioanal perspectives
+       know the situation in other countries
+       but No "foreign countries"
+aiming to One theme
+why is your theme important?
+Use paragraphs
+
+
+
+
+8/26いける
+gif動き対応はもう少し先
+
+並置(NFC/QR)おすすめ
+
+6+1
+＊条件付き
+中身は画像＝＞DL.18(本音は20)
+・をレットでgifアニメ無理？？
+・反映問題
+
+PR/プレス出せたらの件やりたい＞＞Dr.野村
+
+作成
+
+
+・現状維持
+　一週間でのキャパを確認
+
+・3D
+
+
+8番ラーメン
